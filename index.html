@@ -1,0 +1,37 @@
+---
+layout: default
+title: Learn to code
+
+---
+
+<section class="ae-container-fluid ae-container-fluid--full rk-main">
+  <section class="ae-container-fluid ae-container-fluid--inner rk-blog">
+    <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-3">
+
+      {% for post in paginator.posts %}
+       <a href="{{ post.url }}" class="rk-item ae-masonry__item">
+         <img src="{{ post.thumbnail }}" />
+         <span class="item-meta">
+           <p>Ver artículo</p>
+         </span>
+         <div class="item-content">
+           <span class="item-title">
+             <strong>{{ post.title }}</strong>
+           </span>
+           <br>
+           <span class="item-date">
+            <small>publicado el {{ post.date | date: "%d/%m/%Y" }}</small></p>
+           </span>
+           <span class="item-tags">
+            <strong>{{ post.tags }}</strong>
+           </span>
+         </div>
+       </a>
+      {% endfor %}
+
+
+
+    </div>
+    {% include pagination.html %}
+  </section>
+</section>

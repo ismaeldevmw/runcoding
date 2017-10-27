@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<section class="ae-container-fluid ae-container-fluid--full">
+  <header class="rk-portfolio-cover post-inside" style="background-image: url('{{ page.thumbnail }}');">
+    <div class="item-inside__meta">
+      <h1 class="ae-u-bolder rk-portfolio-title white">{{ page.title }}</h1>
+      <p class="ae-theta rk-portfolio-category white">publicado el {{ page.date | date: "%d/%m/%Y" }}</p>
+    </div>
+  </header>
+
+  <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
+
+    <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
+      <div class="ae-grid__item item-lg-8 item-lg--offset-2">
+        {% include read_time.html %}
+        {{ content }}
+      </div>
+    </div>
+
+    <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
+      <div class="ae-grid__item item-lg-12 au-xs-ta-center">
+        <p class="ae-theta">por <span class="ae-u-bolder"><a href="/acerca-de">@ismaeldevmw</a></span></p>
+        <p class="ae-theta">tags <span class="ae-u-bolder item-tags">{{ page.tags }} </span></p>
+      </div>
+      <div class="ae-grid__item item-lg-12 au-xs-ta-center">
+        {% include social_media.html %}
+        {% include facebook_comments.html %}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% include next_previous_posts.html %}

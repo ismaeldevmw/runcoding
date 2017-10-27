@@ -1,0 +1,16 @@
+<div class="ae-grid ae-grid--collapse au-xs-ptp-1">
+ <div class="ae-grid__item item-lg-12 au-xs-ta-center">
+   <svg id="i-clock" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round"
+  stroke-linejoin="round" stroke-width="2"><circle cx="16" cy="16" r="14" /><path d="M16 8 L16 16 20 20" /></svg>
+   {% assign words = content | number_of_words %}
+   {% if words < 360 %}
+     <p class="ae-theta">1<span class="ae-u-bolder"> min.</span> de lectura</p>
+   {% else %}
+     <p class="ae-theta">{{ words | divided_by:180 }} <span class="ae-u-bolder">  mins.</span> de lectura</p>
+   {% endif %}
+ </div>
+</div>
+
+<style>
+    svg#i-clock {vertical-align: middle;}
+</style>

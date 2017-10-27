@@ -1,0 +1,36 @@
+body, html {
+  background-color: #F7F7F7;
+}
+
+.rk-item {
+  background-color: #fff;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.item-content {
+  padding: 10px;
+}
+
+.item-tags {
+  color: #ec5252;
+}
+
+.post-inside {
+  /*height: 350px;*/
+}
+
+.white {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0px 10px 0px 10px;
+  border-radius: 25px;
+}
+
+.rk-portfolio-title {
+  margin-top: 20px;
+}
+
+.rk-logo {
+  color: #ec5252;
+}

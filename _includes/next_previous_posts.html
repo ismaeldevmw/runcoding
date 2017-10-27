@@ -1,0 +1,18 @@
+<section class="ae-container-fluid">
+  <div class="group-buttons">
+    {% if page.previous.url %}
+    <a href="{{ page.previous.url }}" class="arrow-button arrow-button--reverse arrow-button--center"> {{ page.previous.title }}
+     <div class="arrow-cont arrow-cont-rev">
+       <svg><use xlink:href="/assets/img/symbols.svg#arrow"/></svg>
+     </div>
+    </a>
+    {% endif %}
+    {% if page.next.url %}
+    <a href="{{ page.next.url }}" class="arrow-button arrow-button--center"> {{ page.next.title }}
+     <span class="arrow-cont">
+       <svg><use xlink:href="/assets/img/symbols.svg#arrow"/></svg>
+     </span>
+    </a>
+    {% endif %}
+  </div>
+</section>

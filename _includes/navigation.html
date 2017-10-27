@@ -1,0 +1,9 @@
+<ul class="rk-menu">
+  {% for item in site.data.navigation %}
+  <li {% if item.link == page.url %}class="active rk-menu__item"{% endif %} class="rk-menu__item">
+    <a href="{{ item.link }}" class="rk-menu__link">
+      {{ item.name }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

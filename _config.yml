@@ -1,0 +1,12 @@
+name: Runcoding - Learn to Code
+markdown: kramdown
+highlighter: true
+
+
+collections:
+  cursos:
+  portafolios:
+
+plugins: [jekyll-paginate]
+paginate: 5
+paginate_path: "/blog/page:num/"
