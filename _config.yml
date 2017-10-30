@@ -4,6 +4,7 @@ highlighter: true
 
 
 collections:
+  posts:
   cursos:
   portafolios:
 
