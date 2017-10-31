@@ -1,16 +1,15 @@
 backend:
-  name: github
+  name: git-gateway
   repo: ismaeldevmw/runcoding # Path to your Github repository
-  branch: master # Branch to update
+  branch: master # Branch to update (optional; defaults to master)
 
 publish_mode: editorial_workflow
 
-media_folder: "static/images/uploads" # Media files will be stored in the repo under images/uploads
-public_folder: "/images/uploads"
+media_folder: "/assets/images/uploads" # Media files will be stored in the repo under images/uploads
 
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, e.g., /admin/collections/:slug/edit
-    label: "New Post" # Used in the UI, e.g., "New Post"
+    label: "Articulos" # Used in the UI
     folder: "_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
