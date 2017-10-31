@@ -79,7 +79,7 @@
   stroke-linejoin="round" stroke-width="2"><circle cx="16" cy="16" r="14" /><path d="M16 8 L16 16 20 20" /></svg>
    
    
-     <p class="ae-theta">1<span class="ae-u-bolder"> min.</span> de lectura</p>
+     <p class="ae-theta">2 <span class="ae-u-bolder">  mins.</span> de lectura</p>
    
  </div>
 </div>
@@ -88,14 +88,22 @@
     svg#i-clock {vertical-align: middle;}
 </style>
 
-        <p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build
+        <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build
 the site to see your changes. You can rebuild the site in many different ways, but
-the most common way is to run <code>jekyll serve</code>, which launches a web server and
+the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and
 auto-regenerates your site when a file is updated.</p>
 
-<p>To add new posts, simply add a file in the <code>_posts</code> directory that follows the
-convention <code>YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter.
+<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the
+convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter.
 Take a look at the source for this post to get an idea about how it works.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">show</span>
+  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="c1"># show.html.erb</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json: </span><span class="vi">@widget</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
 
 <script src="https://gist.github.com/ismaeldevmw/be5afff123ac9f36c9f3177861feb40a.js"></script>
 
@@ -109,65 +117,65 @@ Take a look at the source for this post to get an idea about how it works.</p>
 
 <p>Happy posting!</p>
 
-<pre><code>&lt;div class="share-box"&gt;
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="share-box"&gt;
+</code></pre></div></div>
 
-<pre><code>&lt;h5&gt;Comparte esto:&lt;/h5&gt;
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;h5&gt;Comparte esto:&lt;/h5&gt;
+</code></pre></div></div>
 
-<pre><code>
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
 
-<pre><code>&lt;a class="f" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr" onclick="window.open(this.href, 'mywin',
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a class="f" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr" onclick="window.open(this.href, 'mywin',
+</code></pre></div></div>
 
-<pre><code>'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" &gt;&lt;i class="fa fa-facebook-official fa"&gt;&lt;/i&gt;&lt;span&gt; facebook&lt;/span&gt;&lt;/a&gt;
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" &gt;&lt;i class="fa fa-facebook-official fa"&gt;&lt;/i&gt;&lt;span&gt; facebook&lt;/span&gt;&lt;/a&gt;
+</code></pre></div></div>
 
-<pre><code>
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
 
-<pre><code>&lt;a class="t" href="https://twitter.com/intent/tweet?text=Homestead como entorno de desarrollo profesional.&amp;url=http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr" onclick="window.open(this.href, 'mywin',
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a class="t" href="https://twitter.com/intent/tweet?text=Homestead como entorno de desarrollo profesional.&amp;url=http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr" onclick="window.open(this.href, 'mywin',
+</code></pre></div></div>
 
-<pre><code>'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"&gt;&lt;i class="fa fa-twitter fa"&gt;&lt;/i&gt;&lt;span&gt; twitter&lt;/span&gt;&lt;/a&gt;
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"&gt;&lt;i class="fa fa-twitter fa"&gt;&lt;/i&gt;&lt;span&gt; twitter&lt;/span&gt;&lt;/a&gt;
+</code></pre></div></div>
 
-<pre><code>
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
 
-<pre><code>&lt;a class="g" href="https://plus.google.com/share?url=http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr" onclick="window.open(this.href, 'mywin',
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a class="g" href="https://plus.google.com/share?url=http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr" onclick="window.open(this.href, 'mywin',
+</code></pre></div></div>
 
-<pre><code>'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" &gt;&lt;i class="fa fa-google-plus fa"&gt;&lt;/i&gt;&lt;span&gt; google&lt;/span&gt;&lt;/a&gt;
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" &gt;&lt;i class="fa fa-google-plus fa"&gt;&lt;/i&gt;&lt;span&gt; google&lt;/span&gt;&lt;/a&gt;
+</code></pre></div></div>
 
-<pre><code>
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
 
-<pre><code>&lt;a class="r" href="http://www.reddit.com/submit?url=http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr" onclick="window.open(this.href, 'mywin',
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a class="r" href="http://www.reddit.com/submit?url=http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr" onclick="window.open(this.href, 'mywin',
+</code></pre></div></div>
 
-<pre><code>'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" &gt;&lt;i class="fa fa-reddit fa"&gt;&lt;/i&gt;&lt;span&gt; reddit&lt;/span&gt;&lt;/a&gt;
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" &gt;&lt;i class="fa fa-reddit fa"&gt;&lt;/i&gt;&lt;span&gt; reddit&lt;/span&gt;&lt;/a&gt;
+</code></pre></div></div>
 
-<pre><code>
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
 
-<pre><code>&lt;a class="l" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr&amp;title=Homestead como entorno de desarrollo profesional.&amp;summary=&amp;source=webjeda" onclick="window.open(this.href, 'mywin',
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a class="l" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr&amp;title=Homestead como entorno de desarrollo profesional.&amp;summary=&amp;source=webjeda" onclick="window.open(this.href, 'mywin',
+</code></pre></div></div>
 
-<pre><code>'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" &gt;&lt;i class="fa fa-linkedin fa"&gt;&lt;/i&gt;&lt;span&gt; linkedin&lt;/span&gt;&lt;/a&gt;
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" &gt;&lt;i class="fa fa-linkedin fa"&gt;&lt;/i&gt;&lt;span&gt; linkedin&lt;/span&gt;&lt;/a&gt;
+</code></pre></div></div>
 
-<pre><code>
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
 
-<pre><code>&lt;a class="e" href="mailto:?subject=Homestead como entorno de desarrollo profesional.&amp;amp;body=Check out this site http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr"&gt;&lt;i class="fa fa-envelope fa"&gt;&lt;/i&gt;&lt;span&gt; email&lt;/span&gt;&lt;/a&gt;
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a class="e" href="mailto:?subject=Homestead como entorno de desarrollo profesional.&amp;amp;body=Check out this site http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr"&gt;&lt;i class="fa fa-envelope fa"&gt;&lt;/i&gt;&lt;span&gt; email&lt;/span&gt;&lt;/a&gt;
+</code></pre></div></div>
 
-<pre><code>&lt;/div&gt;
-</code></pre>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;/div&gt;
+</code></pre></div></div>
 
       </div>
     </div>

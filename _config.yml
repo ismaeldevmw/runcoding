@@ -1,7 +1,6 @@
 name: Runcoding - Learn to Code
 markdown: kramdown
-highlighter: true
-
+highlighter: rouge
 
 collections:
   posts:
