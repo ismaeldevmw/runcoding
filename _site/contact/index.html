@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Learn to code | Runcoding</title>
+    <title>Contact | Runcoding</title>
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
     <link rel="stylesheet" href="/assets/css/aurora-pack.min.css">
     <link rel="stylesheet" href="/assets/css/aurora-theme-base.min.css">
@@ -29,7 +29,7 @@
         <nav class="rk-navigation">
           <ul class="rk-menu">
   
-  <li class="active rk-menu__item" class="rk-menu__item">
+  <li  class="rk-menu__item">
     <a href="/" class="rk-menu__link">
       Blog
     </a>
@@ -65,59 +65,46 @@
   <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
     <div class="ae-grid">
        <div class="ae-grid__item item-sm-12 item-md-9">
-         <div class="ae-masonry ae-masonry-sm-1 ">
-
- <a href="/2017/09/23/homestead-como-entorno-de-desarrollo-pr" class="rk-item ae-masonry__item">
-   <img src="/assets/images/uploads/Community-Manager-1099x550.png" />
-   <span class="item-meta">
-     <p>Ver artículo</p>
-   </span>
-   <div class="item-content">
-     <span class="item-title">
-       <strong>Homestead como entorno de desarrollo profesional.</strong>
-     </span>
-     <br>
-     <span class="item-date">
-      <small>publicado el 23/09/2017</small></p>
-     </span>
-     <span class="item-tags">
-      <strong><small>PHP,Laravel</small></strong>
-     </span>
-   </div>
- </a>
-
-</div>
-
-<div class="ae-grid__item item-sm-12" style="margin-top: 10px; background-color: #fff;">
-<!-- pagination -->
-
+          <form class="wj-contact" action="https://formspree.io/lc.ismael@hotmail.com" method="POST" style="margin-top: 3px;">
+    <input type="email" name="email" placeholder="* Email Address" required>
+    <input type="text" name="name" placeholder="* Name" required>
+    <textarea type="text" name="content" rows="10" placeholder="Message..."></textarea>
+    <input type="hidden" name="_next" value="<REDIRECTION LINK> ">
+    <input type="hidden" name="_subject" value="New Contact Form Submission">
+    <input type="text" name="_gotcha" style="display:none">
+    <input type="submit" value="Submit">
+</form>
 
 <style>
-.pagination a, .pagination span {
-  padding: 7px 18px;
-  border: 1px solid #eee;
-  margin-left: -2px;
-  margin-right: -2px;
-  background-color: #ffffff;
-  display: inline-block;
+form.wj-contact input[type="text"], input[type="email"], form.wj-contact textarea[type="text"] {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+    padding: 0.75em;
+    font-family: monospace, sans-serif;
+    font-weight: lighter;
+    border-style: solid;
+    border-color: #AAAAAA;
+    outline-color: #2e83e6;
+    border-width: 1px;
+    border-radius: 3px;
+    transition: box-shadow .2s ease;
 }
-
-.pagination a {
-  &:hover {
-      background-color: #f1f1f1;
-      color: #333;
-  }
-}
-
-.pagination {
-  text-align: center;
-}
-.webjeda {
-  color: #0098FF;
+form.wj-contact input[type="submit"] {
+    outline: none;
+    color: white;
+    background-color: #AAAAAA;
+    border-radius: 3px;
+    padding: 0.5em;
+    margin: 0.25em 0 0 0;
+    border: 1px solid transparent;
+    height: auto;
+    width: 100%;
+    cursor: pointer;
 }
 </style>
 
-</div>
 
        </div>
        <div class="ae-grid__item item-sm-12 item-md-3" style="margin-top: 7px;">

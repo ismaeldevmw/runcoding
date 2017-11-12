@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Portafolio | Runcoding</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">    
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico">
     <link rel="stylesheet" href="/assets/css/aurora-pack.min.css">
     <link rel="stylesheet" href="/assets/css/aurora-theme-base.min.css">
     <link rel="stylesheet" href="/assets/css/urku.css">
@@ -25,7 +25,7 @@
         </svg>
       </label>
       <div class="ae-container-fluid rk-topbar">
-        <h1 class="rk-logo"><a href="/">Runcoding<sup>tm</sup></a></h1>
+        <h1 class="rk-logo" ><a href="/"> by Ismael López</a></h1>
         <nav class="rk-navigation">
           <ul class="rk-menu">
   
@@ -36,14 +36,14 @@
   </li>
   
   <li  class="rk-menu__item">
-    <a href="/cursos/" class="rk-menu__link">
-      Cursos
+    <a href="/courses/" class="rk-menu__link">
+      Courses
     </a>
   </li>
   
   <li  class="rk-menu__item">
-    <a href="/acerca-de/" class="rk-menu__link">
-      Acerca de
+    <a href="/videos/" class="rk-menu__link">
+      Videos
     </a>
   </li>
   
@@ -61,67 +61,41 @@
       </div>
     </header>
 
-    <section class="ae-container-fluid rk-main">
-  <section class="ae-container-fluid ae-container-fluid--inner rk-blog">
+    <section class="ae-container-fluid ae-container-fluid--full rk-main">
+  <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
     <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-2" id="image_container">
 
        
-       <div class="rk-item ae-masonry__item">
+       <div class="rk-item ae-masonry__item" id="portafolio-item">
          <img src="/assets/img/blessed.jpg" />
          <div class="item-content">
            <span class="item-title">
              <strong>Examen de evaluación</strong>
            </span>
+           <br>
            <span class="item-details">
-             <p>Sistema de evaluación de conocimientos desarrollado con PHP, como solución de validación de conocimientos por parte de los alumnos y complemento de evaluación para los profesores.</p>
+             <small>Sistema de evaluación de conocimientos desarrollado con PHP, como solución de validación de conocimientos por parte de los alumnos y complemento de evaluación para los profesores.</small>
            </span>
+           <br>
            <span class="item-tags">
-             <p>Desarrollo web</p>
+             <small><strong>Desarrollo web</strong></small>
            </span>
          </div>
        </div>
       
-       <div class="rk-item ae-masonry__item">
-         <img src="/assets/img/blessed.jpg" />
-         <div class="item-content">
-           <span class="item-title">
-             <strong>Examen de evaluación</strong>
-           </span>
-           <span class="item-details">
-             <p>Sistema de evaluación de conocimientos desarrollado con PHP, como solución de validación de conocimientos por parte de los alumnos y complemento de evaluación para los profesores.</p>
-           </span>
-           <span class="item-tags">
-             <p>Desarrollo web</p>
-           </span>
-         </div>
-       </div>
-      
-       <div class="rk-item ae-masonry__item">
+       <div class="rk-item ae-masonry__item" id="portafolio-item">
          <img src="/assets/img/devicon.jpg" />
          <div class="item-content">
            <span class="item-title">
              <strong>Punto de venta</strong>
            </span>
+           <br>
            <span class="item-details">
-             <p>Sistema de ventas e inventario desarrollado con PHP, como solución de punto de venta general para pequeños comercios.</p>
+             <small>Sistema de ventas e inventario desarrollado con PHP, como solución de punto de venta general para pequeños comercios.</small>
            </span>
+           <br>
            <span class="item-tags">
-             <p>Desarrollo web</p>
-           </span>
-         </div>
-       </div>
-      
-       <div class="rk-item ae-masonry__item">
-         <img src="/assets/img/devicon.jpg" />
-         <div class="item-content">
-           <span class="item-title">
-             <strong>Punto de venta</strong>
-           </span>
-           <span class="item-details">
-             <p>Sistema de ventas e inventario desarrollado con PHP, como solución de punto de venta general para pequeños comercios.</p>
-           </span>
-           <span class="item-tags">
-             <p>Desarrollo web</p>
+             <small><strong>Desarrollo web</strong></small>
            </span>
          </div>
        </div>
@@ -131,7 +105,7 @@
   </section>
 </section>
 <!-- inject:js -->
-<script src="/assets/js/BigPicture.js"></script>
+<script src="/assets/plugins/bigpicture/BigPicture.js"></script>
 <!-- endinject -->
 
 <script>
@@ -156,16 +130,14 @@
       <div class="ae-grid ae-grid--collapse">
         <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
           <ul class="rk-menu rk-footer-menu">
-            <li class="rk-menu__item"><a href="documentation.html" class="rk-menu__link">Aviso Legal</a>
+            <li class="rk-menu__item"><a href="/about/" class="rk-menu__link">About</a>
             </li>
-            <li class="rk-menu__item"><a href="contact.html" class="rk-menu__link">Privacidad</a>
-            </li>
-            <li class="rk-menu__item"><a href="/contacto/" class="rk-menu__link">Contacto</a>
+            <li class="rk-menu__item"><a href="/contact/" class="rk-menu__link">Contact</a>
             </li>
           </ul>
-
         </div>
         <div class="ae-grid__item item-lg-4 au-xs-ta-center">
+          <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© 2017 </span><span class="ae-u-bolder">Runcoding </span> All rights reserved.</p>
           <a href="https://www.facebook.com/ismaeldevmw" target="_blank" class="rk-social-btn ">
             <svg>
               <use xlink:href="/assets/img/symbols.svg#icon-facebook"></use>
@@ -181,7 +153,6 @@
               <use xlink:href="/assets/img/symbols.svg#icon-pinterest"></use>
             </svg>
           </a>
-          <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© 2017 </span><span class="ae-u-bolder">Runcoding </span> All rights reserved.</p>
         </div>
         <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
           <p class="rk-footer__text rk-footer__by">Powered by <a href="https://www.netlify.com/" class="ae-u-bolder">Netlify</a></p>

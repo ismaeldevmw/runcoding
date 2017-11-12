@@ -3,23 +3,24 @@ layout: default
 title: Portafolio
 permalink: /portafolio/
 ---
-
-<section class="ae-container-fluid rk-main">
-  <section class="ae-container-fluid ae-container-fluid--inner rk-blog">
+<section class="ae-container-fluid ae-container-fluid--full rk-main">
+  <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
     <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-2" id="image_container">
 
        {% for item in site.portafolios %}
-       <div class="rk-item ae-masonry__item">
+       <div class="rk-item ae-masonry__item" id="portafolio-item">
          <img src="{{ item.thumbnail }}" />
          <div class="item-content">
            <span class="item-title">
              <strong>{{ item.project-name }}</strong>
            </span>
+           <br>
            <span class="item-details">
-             <p>{{  item.description }}</p>
+             <small>{{  item.description }}</small>
            </span>
+           <br>
            <span class="item-tags">
-             <p>{{  item.category }}</p>
+             <small><strong>{{  item.category }}</strong></small>
            </span>
          </div>
        </div>
@@ -29,7 +30,7 @@ permalink: /portafolio/
   </section>
 </section>
 <!-- inject:js -->
-<script src="/assets/js/BigPicture.js"></script>
+<script src="/assets/plugins/bigpicture/BigPicture.js"></script>
 <!-- endinject -->
 
 <script>

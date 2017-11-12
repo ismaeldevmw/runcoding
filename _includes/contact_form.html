@@ -1,6 +1,7 @@
-<form class="wj-contact" action="https://formspree.io/lc.ismael@hotmail.com" method="POST">
-    <input type="text" name="email" placeholder="Email Address">
-    <textarea type="text" name="content" rows="10" placeholder="Message"></textarea>
+<form class="wj-contact" action="https://formspree.io/lc.ismael@hotmail.com" method="POST" style="margin-top: 3px;">
+    <input type="email" name="email" placeholder="* Email Address" required>
+    <input type="text" name="name" placeholder="* Name" required>
+    <textarea type="text" name="content" rows="10" placeholder="Message..."></textarea>
     <input type="hidden" name="_next" value="<REDIRECTION LINK> ">
     <input type="hidden" name="_subject" value="New Contact Form Submission">
     <input type="text" name="_gotcha" style="display:none">
@@ -8,7 +9,7 @@
 </form>
 
 <style>
-form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {
+form.wj-contact input[type="text"], input[type="email"], form.wj-contact textarea[type="text"] {
     width: 100%;
     vertical-align: middle;
     margin-top: 0.25em;
@@ -17,7 +18,7 @@ form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {
     font-family: monospace, sans-serif;
     font-weight: lighter;
     border-style: solid;
-    border-color: #444;
+    border-color: #AAAAAA;
     outline-color: #2e83e6;
     border-width: 1px;
     border-radius: 3px;
@@ -26,12 +27,13 @@ form.wj-contact input[type="text"], form.wj-contact textarea[type="text"] {
 form.wj-contact input[type="submit"] {
     outline: none;
     color: white;
-    background-color: #2e83e6;
+    background-color: #AAAAAA;
     border-radius: 3px;
     padding: 0.5em;
     margin: 0.25em 0 0 0;
     border: 1px solid transparent;
     height: auto;
     width: 100%;
+    cursor: pointer;
 }
 </style>

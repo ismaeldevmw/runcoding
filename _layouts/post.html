@@ -2,7 +2,7 @@
 layout: default
 ---
 <section class="ae-container-fluid ae-container-fluid--full">
-  <header class="rk-portfolio-cover post-inside" style="background-image: url('{{ page.thumbnail }}');">
+  <header class="rk-portfolio-cover" style="background-image: url('{{ page.thumbnail }}');">
     <div class="item-inside__meta">
       <h1 class="ae-u-bolder rk-portfolio-title white">{{ page.title }}</h1>
       <p class="ae-theta rk-portfolio-category white">publicado el {{ page.date | date: "%d/%m/%Y" }}</p>
@@ -20,8 +20,8 @@ layout: default
 
     <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
       <div class="ae-grid__item item-lg-12 au-xs-ta-center">
-        <p class="ae-theta">por <span class="ae-u-bolder"><a href="/acerca-de">@ismaeldevmw</a></span></p>
-        <p class="ae-theta">tags <span class="ae-u-bolder item-tags">{{ page.tags }} </span></p>
+        <p class="ae-theta">por <span class="ae-u-bolder"><a href="/about">@ismaeldevmw</a></span></p>
+        <p class="ae-theta">categoría <span class=" item-tags"><small>{{ page.tags }}</small></span></p>
       </div>
       <div class="ae-grid__item item-lg-12 au-xs-ta-center">
         {% include social_media.html %}

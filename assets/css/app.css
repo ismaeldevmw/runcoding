@@ -1,5 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 body, html {
   background-color: #F7F7F7;
+}
+#portafolio-item {
+  cursor: pointer;
+}
+.rk-logo {
+  font-family: 'Great Vibes', cursive;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 2.25px;
+  text-align: center;
+  width: 20%;
+}
+.rk-logo sup {
+  font-size: .5625rem;
+  position: relative;
+  top: -1px;
+}
+@media (min-width: 64em) {
+  .rk-logo {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: left;
+  }
 }
 
 .rk-item {
@@ -13,11 +43,10 @@ body, html {
 }
 
 .item-tags {
-  color: #ec5252;
-}
-
-.post-inside {
-  /*height: 350px;*/
+  color: #fff;
+  border-radius: 25px;
+  padding: 0px 1em 3px;
+  background-color: #0098FF;
 }
 
 .white {
@@ -29,8 +58,4 @@ body, html {
 
 .rk-portfolio-title {
   margin-top: 20px;
-}
-
-.rk-logo {
-  color: #ec5252;
 }

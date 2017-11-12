@@ -1,19 +1,27 @@
 ---
-layout: default
-title: Cursos
-permalink: /cursos/
+layout: page
+title: Courses
+permalink: /courses/
 ---
-<section class="ae-container-fluid rk-main">
- <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
-   <div class="ae-masonry ae-masonry-md-1 ae-masonry-xl-1">
-     {% for item in site.cursos %}
-     <a href="{{ item.link }}" target="_blank" class="rk-item ae-masonry__item"><img src="{{ item.thumbnail }}">
-       <div class="item-meta">
-         <h2>{{ item.title }}</h2>
-         <p>{{ item.price }}</p>
-       </div>
-     </a>
-     {% endfor %}
+<div class="ae-masonry ae-masonry-sm-1 ae-masonry-md-2">
+{% for item in site.cursos %}
+ <a href="{{ item.link }}" class="rk-item ae-masonry__item">
+   <img src="{{ item.thumbnail }}" />
+   <span class="item-meta">
+     <p>Ir al curso</p>
+   </span>
+   <div class="item-content">
+     <span class="item-title">
+       <strong>{{ item.title }}</strong>
+     </span>
+     <br>
+     <span class="item-details">
+      <small>{{ item.description}}</small></p>
+     </span>
+     <span class="item-tags">
+      <strong><small>{{ item.price }}</small></strong>
+     </span>
    </div>
- </section>
-</section>
+ </a>
+{% endfor %}
+</div>
