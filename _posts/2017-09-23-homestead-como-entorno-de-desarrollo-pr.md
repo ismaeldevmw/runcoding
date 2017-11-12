@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Homestead como entorno de desarrollo profesional.
-tags: 'PHP, Laravel'
+tags: Laravel
 thumbnail: /assets/images/uploads/homestead.jpg
 permalink: '/:year/:month/:day/:title'
 ---
