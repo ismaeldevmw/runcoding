@@ -2,7 +2,7 @@
 layout: post
 title: Homestead como entorno de desarrollo profesional.
 tags: 'PHP, Laravel'
-thumbnail: /assets/images/uploads/Community-Manager-1099x550.png
+thumbnail: /assets/images/uploads/homestead.jpg
 permalink: '/:year/:month/:day/:title'
 ---
 You'll find this post in your `_posts` directory. Go ahead and edit it and re-build
