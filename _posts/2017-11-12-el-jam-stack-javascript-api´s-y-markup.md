@@ -2,7 +2,7 @@
 layout: post
 title: 'El JAM Stack: Javascript, API´s y Markup'
 tags: JAM
-thumbnail: /assets/images/uploads/jekyll-netlify-2.png
+thumbnail: /assets/images/uploads/jekyll-netlify.png
 permalink: '/:year/:month/:day/:title'
 ---
 Cuando hablamos de un stack normalmente pensamos en un backend, un fronted, bases de datos, etc. pero es solo un conjunto de tecnologías que usamos para llevar a cabo el desarrollo de un proyecto. El JAMStack no es en realidad un conjunto de tecnologías. Es una nueva forma de construir sitios web y apps que deliberen mejor performance, alta seguridad, escalamiento de bajo costo y una mejor experiencia de desarrollo.
@@ -20,7 +20,7 @@ Tu proyecto es construido con el JAMstack si reúne tres criterios clave:
 * Markup
   El template de markup debe ser pre construido en tiempo de despliegue, usualmente se usa un sitio generador de contenido o construido con herramientas para web apps.
 
-## ¿Cuando tu sitio podría no es construido con el JAMstack?
+## ¿Cuando tu sitio podría no estar construido con el JAMstack?
 
 Cualquier sitio quedependa de un estrecho acoplamientoentre cliente y servidor no está construido con el JAMstack. Estos podrían incluir:
 
