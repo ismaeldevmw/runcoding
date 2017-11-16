@@ -54,11 +54,11 @@ php artisan make:model Tag -m
 
 Todo bien hasta aquí, hace falta una migración para el tema de muchos a muchos de los posts y los tags, ya los crearemos pero primero te voy a enseñar que tenemos hasta ahora:
 
-![modelos](/assets/images/uploads/modelos-app.JPG)
+![undefined](/assets/images/uploads/modelos-app.JPG)
 
 Observa que dentro del directorio `app` se crearon las entidades `Category`, `Post` y `Tag` con los comandos anteriores y la de `User` ya viene creada por defecto. Ahora observemos que dentro del directorio `database/migrations` se encuentra la migración para usuarios que ya viene creada por defecto, para resetear las contraseñas también ya viene creada. y debajo aparecen las migraciones que creamos:
 
-![migrations](/assets/images/uploads/migrations-created.JPG)
+![undefined](/assets/images/uploads/migrations-created.JPG)
 
 Nos hace falta una ultima migración para relacionar muchos a muchos los posts con los tags, en este caso el comando es diferente no vamos a crear un modelo vamos a crear directamente una migración, si algún comando se te olvida puedes usar el comando `php artisan` y tendrás todos los comandos, el que vamos a usar es `make:migration`:
 
