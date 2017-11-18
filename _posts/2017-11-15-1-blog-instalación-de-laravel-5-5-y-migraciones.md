@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '#1 BLOG | Instalación de Laravel 5.5 y migraciones.'
+title: '#1 Creando un BLOG | Instalación de Laravel 5.5 y migraciones.'
 tags: Laravel
 thumbnail: /assets/images/uploads/migrations-created.JPG
 permalink: '/:year/:month/:day/:title'
