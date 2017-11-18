@@ -7,7 +7,7 @@ permalink: '/:year/:month/:day/:title'
 ---
 Bienvenido a este nuevo post en en que vamos a comenzar el proyecto de crear un blog en Laravel 5.5, Laravel utiliza Composer para manejar sus dependencias, así que antes de comenzar debes asegurarte de tenerlo instalado en tu máquina.
 
-#### Vía Laravel Installer
+## Vía Laravel Installer
 
 Primero, descarga el instalador de Laravel usando Composer:
 
@@ -26,13 +26,15 @@ Una vez instalado, el comando `laravel new` creara una instalación limpia de La
 laravel new blog
 ```
 
-#### Vía Composer Create-Project
+## Vía Composer Create-Project
 
 Alternativamente, puedes también instalar Laravel por medio del comando Composer `create-project` en tu terminal:
 
 ```php
 composer create-project --prefer-dist laravel/laravel blog
 ```
+
+## Creando migraciones
 
 Una vez creado nuestro proyecto Laravel vamos a crear nuestras entidades necesarias junto a las migraciones, vamos al terminal y nos movemos al directorio de nuestro proyecto `cd blog`, vamos a crear el modelo junto a la migración con el flag `-m`, creamos el modelo `Category` observa que lo escribo en Inglés y singular esto es un estándar; si trabajamos de esta manera en el futuro cualquiera puede leer tu código porque nos estamos basando en estándares internacionales es decir el modelo está en inglés y en singular y la tabla en plural y también está en inglés, vamos a crear el modelo:
 
@@ -59,6 +61,8 @@ Todo bien hasta aquí, hace falta una migración para el tema de muchos a muchos
 Observa que dentro del directorio `app` se crearon las entidades `Category`, `Post` y `Tag` con los comandos anteriores y la de `User` ya viene creada por defecto. Ahora observemos que dentro del directorio `database/migrations` se encuentra la migración para usuarios que ya viene creada por defecto, para resetear las contraseñas también ya viene creada. y debajo aparecen las migraciones que creamos:
 
 ![undefined](/assets/images/uploads/migrations-created.JPG)
+
+## Relaciones muchos  a muchos
 
 Nos hace falta una ultima migración para relacionar muchos a muchos los posts con los tags, en este caso el comando es diferente no vamos a crear un modelo vamos a crear directamente una migración, si algún comando se te olvida puedes usar el comando `php artisan` y tendrás todos los comandos, el que vamos a usar es `make:migration`:
 
