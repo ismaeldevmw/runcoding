@@ -11,7 +11,7 @@ Vamos a continuar, en esté punto necesitamos configurar la base de datos lo hac
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=33060
-DB_DATABASE=blog
+DB_DATABASE=blog-laravel
 DB_USERNAME=homestead
 DB_PASSWORD=secret
 ```
@@ -21,9 +21,26 @@ Además dentro de tu archivo `homestead.yml` debes agregar el nombre de tu base 
 ```php
 databases:
     - homestead
-    - blog
+    - blog-laravel
 ```
 
 Antes de continuar con el temas de la configuración y las migraciones, vamos a ver un error. Por ejemplo si escribo `php artisan migrate` nos lanza un error que igualmente aparece en Laravel 5.4, sin embargo la solución e este caso es diferente aunque también funcionaria, basicamente dice que la columna unica no tiene una longitud establecida asi que simplemente lo que debemos hacer es darle una longitud fija :
 
 Entonces vamos al editor de código, buscamos las migraciones dentro del directorio `database`/`migrations`, por su puesto las que creamos anteriormente no tienen este problema pero si que la de `create_users`. Tenemos que el campo email aparece como `unique` y no tiene una longitud, así que lo tenemos que cambiar:
+
+Una vez hecho esto podemos ejecutar sin problemas `php artisan migrate`.
+
+Ahora vamos a modificar el archivo de las migraciones de Category en el cual vamos a agregar los campos que necesites.
+
+```php
+public function up()
+{
+ Schema::create('categories', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name', 64);
+            $table->string('slug', 128);
+            $table->mediumText('body')->nullable();
+            $table->timestamps();
+        });
+    }
+```
