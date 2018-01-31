@@ -70,28 +70,17 @@ For Windows you could use
 
 ```
 "scripts": {
-    "dev": "set NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "set NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "hot": "set NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "set NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "dev": "set NODE_ENV=development&&node node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "set NODE_ENV=development&&node node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "set NODE_ENV=development&&node webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "set NODE_ENV=production&&node node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   }
 ```
 
-Only add `set` before NODE_ENV
-
-But my sripts are those
-
-```
-"scripts": {
-    "dev": "webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "hot": "webpack --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-  }
-```
+Only add `set` before NODE_ENV and `&&node` to finish
 
 And webpack.mix file code
 
 ```
-let mix = require('laravel-mix');mix.scripts(['src/assets/js/app.js',], 'dist/app.js').styles(['src/assets/css/app.css',], 'dist/app.css');
+const mix = require('laravel-mix');mix.babel(['src/assets/js/app.js',], 'dist/app.js').styles(['src/assets/css/app.css',], 'dist/app.css');
 ```
