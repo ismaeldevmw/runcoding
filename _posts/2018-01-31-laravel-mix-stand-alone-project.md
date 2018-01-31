@@ -85,4 +85,6 @@ And webpack.mix file code
 const mix = require('laravel-mix');mix.babel(['src/assets/js/app.js',],     'dist/app.js')    .styles(['src/assets/css/app.css',]    , 'dist/app.css');
 ```
 
-Execute `npm run dev`
+Execute `npm run dev` and you can see an ouput
+
+![Salida después de ejecutar npm run dev](/assets/images/uploads/mix-4.JPG)
