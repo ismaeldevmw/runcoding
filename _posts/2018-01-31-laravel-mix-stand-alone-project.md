@@ -82,5 +82,7 @@ Only add `set` before NODE_ENV and `&&node` to finish
 And webpack.mix file code
 
 ```
-const mix = require('laravel-mix');mix.babel(['src/assets/js/app.js',], 'dist/app.js').styles(['src/assets/css/app.css',], 'dist/app.css');
+const mix = require('laravel-mix');mix.babel(['src/assets/js/app.js',],     'dist/app.js')    .styles(['src/assets/css/app.css',]    , 'dist/app.css');
 ```
+
+Execute `npm run dev`
