@@ -2,7 +2,7 @@
 layout: post
 title: '#2 Creando un BLOG | SLUG y Migraciones'
 tags: Laravel
-thumbnail: /assets/images/uploads/laravel-blog.png
+thumbnail: /assets/images/uploads/miniatura-laravel-2.png
 permalink: '/:year/:month/:day/:title'
 ---
 Vamos a continuar, en esté punto necesitamos configurar la base de datos lo hacemos en el archivo .env, aquí tenemos un parametro para configurar el puerto en este caso lo haremos con Homestead, para conectar tu base de datos MySQL o PostgreSQL de la base de datos cliente de tu máquina, debes conectar a 127.0.0,1 y al puerto 33060(MySQL) o 54320(PostgreSQL). El username y password para ambas bases de datos es homestead/secret. Por lo tanto debes tener la siguiente configuración con los siguientes datos:
