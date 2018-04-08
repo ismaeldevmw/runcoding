@@ -41,3 +41,5 @@ Lo interesante de usar Netlify es que te ofrece muchas opciones de autenticació
 El JAMstack sin duda es una muy buena alternativa para pequeños y grandes negocios que nos ofrece la separación y control de nuestro código en desarrollo y debugging. Es muy versátil ya que podemos usar frameworks como Angular, React o Vue por mencionar los más populares y muchas otras propias del desarrollo web como Sass, Webpack, Gulp, PWA... Y claro no olvidar que el costo es mucho menor ya sea en la cuestión económica como a nivel de desarrollo ya que no tenemos que invertir mucho tiempo en aprender un lenguaje de backend si lo único que quieres es crear un blog o el sitio web de tu empresa y posteriormente si necesitas algo más pulido tienes la ventaja que puedes escalar integrando tu web con API´s y la característica no menos importante la carga mas rapida de las paginas web ya que el contenido no tiene que pasar por un lenguaje de backend simplemente es servido al browser del usuario.
 
 <!--EndFragment-->
+
+<iframe src="https://www.youtube.com/watch?v=DJoGU5xuN_c"></iframe>
