@@ -42,4 +42,4 @@ El JAMstack sin duda es una muy buena alternativa para pequeños y grandes negoc
 
 <!--EndFragment-->
 
-<iframe src="https://www.youtube.com/watch?v=DJoGU5xuN_c"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DJoGU5xuN_c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
