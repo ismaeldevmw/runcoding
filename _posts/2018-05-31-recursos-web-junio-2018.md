@@ -5,6 +5,8 @@ tags: 'desarrollo web, Javascript'
 thumbnail: /assets/images/uploads/miniatura-live-html5-css.png
 permalink: '/:year/:month/:day/:title'
 ---
+En esta serie de posts mensuales les compartiré los recursos que me parezcan interesantes y que de antemano ya he ido utilizando en proyectos en mi día a día como desarrollador o simplemente por ocio, así que no se diga mas y comenzemos.
+
 ![pexels](/assets/images/uploads/pexels.JPG)
 
 ## [Pexels](https://www.pexels.com)
@@ -41,4 +43,36 @@ Si no eres mucho de leer documentación en ingles y quieres estar informado de l
 
 Continuamos nuevamente con otra pagina web que ofrece maravillosas imágenes, pero ademas de ello también tienes a disposición vídeos compartidos por toda la gran comunidad de pixabay. Desde mi punto de vista realmente se parece mucho a Pexels, pero eso no importa lo que si es que ya tienes de donde obtener recursos de calidad.
 
-## Adonis.js un Framework de Node
+![bootswatch](/assets/images/uploads/bootswatch.JPG)
+
+## [Bootswatch](https://bootswatch.com/)
+
+Hemos llegado a uno de mis recursos favoritos, Bootswatch nos proporciona temas del famoso framework bootstrap, los temas sen ven muy bien ademas podemos acceder al repositorio y con
+
+![adonisjs](/assets/images/uploads/adonisjs.JPG)
+
+tribuir a su desarrollo, otra cosa destaca es que usa la ultima versión estable de Bootstrap asi que no tienes escusar para usarlo.
+
+![goalkicker](/assets/images/uploads/goalkicker.JPG)
+
+## [Programming Notes for Professionals books](https://goalkicker.com)
+
+Como lo dice el nombre si es un sitio en cual nos proporcional libros digitales creados por muchos desarrolladores que realmente vale la pena estudiarlos ya que no vienen para nada des actualizados y no encontraras libros tan completos como estos. Este recurso me lo recomendó un amigo y ahora es tuyo así que palmas para el compa Eibar.
+
+![30-seconds-of-css](/assets/images/uploads/30-seconds-of-css.JPG)
+
+## [30 Seconds of **CSS**](https://atomiks.github.io/30-seconds-of-css)
+
+En este sitio web encontrar ejercicios practicos teoricos con los cuales te podras entretener y aprender el lenguaje de estilos CSS de una forma amena y divertida, 100% recomendado.
+
+![css-icon](/assets/images/uploads/css-icon.JPG)
+
+## [CSS ICON](http://cssicon.space)
+
+En CSS Icon encontraras una gran variedad de iconos creados con css que ayudaran a mejorar el rendimiento de tus proyectos web, porque no tienes que usar imágenes que SVG sigue siendo ideal para ello, pero mira que es que de pazo seguimos aprendiendo mas acerca de css y también lo podemos probar en codepen para que no quede duda.
+
+![adonisjs](/assets/images/uploads/adonisjs.JPG)
+
+## [AdonisJs - Node.js  web framework](https://www.adonisjs.com)
+
+Adonisjs es un framework de Node.js con una elegante sintaxis que los desarrolladores disfrutamos y con una gran estabilidad, si vienes de Laravel y te gustaría probar el poder de Node del lado del servidor no te costara trabajo ya que tiene muchas similitudes en cuanto a crear los controller los models y todo lo demás que tiene Laravel. De verdad que me ha encantado este framework y no duden que verán próximos vídeos de Adonisjs.
