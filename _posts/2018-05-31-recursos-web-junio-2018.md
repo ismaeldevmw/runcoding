@@ -47,11 +47,7 @@ Continuamos nuevamente con otra pagina web que ofrece maravillosas imágenes, pe
 
 ## [Bootswatch](https://bootswatch.com/)
 
-Hemos llegado a uno de mis recursos favoritos, Bootswatch nos proporciona temas del famoso framework bootstrap, los temas sen ven muy bien ademas podemos acceder al repositorio y con
-
-![adonisjs](/assets/images/uploads/adonisjs.JPG)
-
-tribuir a su desarrollo, otra cosa destaca es que usa la ultima versión estable de Bootstrap asi que no tienes escusar para usarlo.
+Hemos llegado a uno de mis recursos favoritos, Bootswatch nos proporciona temas del famoso framework bootstrap, los temas sen ven muy bien ademas podemos acceder al repositorio y contribuir a su desarrollo, otra cosa destaca es que usa la ultima versión estable de Bootstrap así que no tienes escusar para usarlo.
 
 ![goalkicker](/assets/images/uploads/goalkicker.JPG)
 
