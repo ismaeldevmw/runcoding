@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Recursos para desarrolladores Junio 2018
+title: Recursos para desarrolladores Julio 2018
 tags: 'desarrollo web, Javascript'
 thumbnail: /assets/images/uploads/miniatura-recursos-junio-2018.png
 permalink: '/:year/:month/:day/:title'
