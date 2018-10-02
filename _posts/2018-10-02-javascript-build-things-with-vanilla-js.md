@@ -7,4 +7,4 @@ permalink: '/:year/:month/:day/:title'
 ---
 ## Toogle function
 
-<script src="https://gist.github.com/ismaeldevmw/fa55f6958a779e690d852b99c46cd3d0.js"></script>
+Función que oculta y muestra un elemento
