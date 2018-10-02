@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript - Build things with vanilla JS
 tags: javascript
-thumbnail: /assets/images/uploads/1_6ahbWjp_g9hqhaTDSJOL1Q.png
+thumbnail: /assets/images/uploads/js.png
 permalink: '/:year/:month/:day/:title'
 ---
 ## Toogle function
