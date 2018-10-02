@@ -7,6 +7,4 @@ permalink: '/:year/:month/:day/:title'
 ---
 ## Toogle function
 
-```
-const toogle = (identificador) => {    if(document.getElementById(identificador).style.display == 'none') {        document.getElementById(identificador).style.display = 'block';}}else {document.getElementById(identificador).style.display = 'none';}}
-```
+<script src="https://gist.github.com/ismaeldevmw/fa55f6958a779e690d852b99c46cd3d0.js"></script>
