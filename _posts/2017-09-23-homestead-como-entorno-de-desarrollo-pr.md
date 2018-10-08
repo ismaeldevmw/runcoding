@@ -5,4 +5,4 @@ tags: Laravel
 thumbnail: /assets/images/uploads/homestead.jpg
 permalink: '/:year/:month/:day/:title'
 ---
-{% youtube lfAtoykp88E %}
+???
