@@ -13,5 +13,5 @@ permalink: '/:year/:month/:day/:title'
 ### UpperCase Input
 
 > Convertir a mayusculas desde un input.
-{% 254de54163541a12b11cf4434cde16ee %}
+{% gist 254de54163541a12b11cf4434cde16ee %}
 
