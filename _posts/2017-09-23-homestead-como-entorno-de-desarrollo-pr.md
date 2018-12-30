@@ -5,9 +5,7 @@ tags: Laravel
 thumbnail: /assets/images/uploads/homestead.jpg
 permalink: '/:year/:month/:day/:title'
 ---
-```
 ¿Qué es Homestead? Homestead nos provee de un entorno de desarrollo local mediante maquinas virtuales, por medio de Vagrant. 
-```
 
 Cuando trabajas con múltiples proyectos, el hacerlo con tu máquina ya no es tan fácil ya que muchas veces necesitas diferentes versiones de PHP o tu equipo puede tener diferentes sistemas operativos, diferentes versiones de PHP o diferentes versiones de la base de datos lo cual puede ser bastante problemático. Para solucionar esto usamos la virtualización que nos permite crear entornos virtuales dentro de nuestro equipo que nos ayudan a tener un entorno de desarrollo ideal.
 
@@ -98,7 +96,5 @@ Tu debes agregar los dominios de tus sitios del servidor en tu máquina. El arch
 ### Ejecutando Vagrant Box
 
 Una vez que hayas editado  Homestead.yaml, ejecuta el comando `vagrant up` de tu directorio Homested. Vagrant prendera la máquina y automaticamente configurara tus carpetas compartidas y sitios.
-
-
 
 Hemos terminado de configurar Homestead  ahora si podremos comenzar a desarrollar nuestros proyectos si preocuparnos de las problemáticas mencionadas al inicio del post, espero que este post te ayude
