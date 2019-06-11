@@ -5,11 +5,15 @@ tags: Laravel
 thumbnail: /assets/images/uploads/homestead.jpg
 permalink: '/:year/:month/:day/:title'
 ---
+
+
+youtube lfAtoykp88E
+
 ¿Qué es Homestead? Homestead nos provee de un entorno de desarrollo local mediante maquinas virtuales, por medio de Vagrant. 
 
 Cuando trabajas con múltiples proyectos, el hacerlo con tu máquina ya no es tan fácil ya que muchas veces necesitas diferentes versiones de PHP o tu equipo puede tener diferentes sistemas operativos, diferentes versiones de PHP o diferentes versiones de la base de datos lo cual puede ser bastante problemático. Para solucionar esto usamos la virtualización que nos permite crear entornos virtuales dentro de nuestro equipo que nos ayudan a tener un entorno de desarrollo ideal.
 
-Existen dos vertientes principales: **Vagrant **y **Docker**. **Vagrant **genera máquinas virtuales completas en las cuales podemos instalar PHP, bases de datos, Apache, entre otras. La otra vertiente es **Docker **con la cual se generan pequeños contenedores dentro de una máquina virtual los cuales contienen la instalación de PHP o la base de datos, logrando que trabajen en conjunto.
+Existen dos vertientes principales: **Vagrant** y **Docker**. **Vagrant** genera máquinas virtuales completas en las cuales podemos instalar PHP, bases de datos, Apache, entre otras. La otra vertiente es **Docker** con la cual se generan pequeños contenedores dentro de una máquina virtual los cuales contienen la instalación de PHP o la base de datos, logrando que trabajen en conjunto.
 
 Para comenzar a usar Homestead vamos a seguir los siguientes pasos y configuraciones:
 
