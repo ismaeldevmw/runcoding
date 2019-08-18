@@ -1,119 +1,104 @@
 ---
 layout: post
 title: Homestead como entorno de desarrollo profesional.
-tags: 'PHP, Laravel'
-thumbnail: /assets/images/uploads/Community-Manager-1099x550.png
+tags: Laravel
+thumbnail: /assets/images/uploads/homestead.jpg
 permalink: '/:year/:month/:day/:title'
 ---
-You'll find this post in your `_posts` directory. Go ahead and edit it and re-build
-the site to see your changes. You can rebuild the site in many different ways, but
-the most common way is to run `jekyll serve`, which launches a web server and
-auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the
-convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter.
-Take a look at the source for this post to get an idea about how it works.
-
-{% highlight ruby %}
-def show
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
-{% endhighlight %}
-
-<script src="https://gist.github.com/ismaeldevmw/be5afff123ac9f36c9f3177861feb40a.js"></script>
-
-## Accessing the CMS
-
-Your site CMS is now fully configured and ready for login!
-
-If you set your registration preference to “Invite only,” you’ll need to invite yourself (and anyone else you choose) as a site user. To do this, select the Identity tab from your site dashboard, and then select the Invite users button. Invited users will receive an email invitation with a confirmation link. Clicking the link will take you to your site with a login prompt.
-
-If you left your site registration open, or for return visits after comfirming an email invitation, you can access your site’s CMS at yoursite.com/admin.
-
-Happy posting!
 
 
+youtube lfAtoykp88E
 
-```
-<div class="share-box">
-```
+¿Qué es Homestead? Homestead nos provee de un entorno de desarrollo local mediante maquinas virtuales, por medio de Vagrant. 
 
-```
-<h5>Comparte esto:</h5>
-```
+Cuando trabajas con múltiples proyectos, el hacerlo con tu máquina ya no es tan fácil ya que muchas veces necesitas diferentes versiones de PHP o tu equipo puede tener diferentes sistemas operativos, diferentes versiones de PHP o diferentes versiones de la base de datos lo cual puede ser bastante problemático. Para solucionar esto usamos la virtualización que nos permite crear entornos virtuales dentro de nuestro equipo que nos ayudan a tener un entorno de desarrollo ideal.
 
-```
+Existen dos vertientes principales: **Vagrant** y **Docker**. **Vagrant** genera máquinas virtuales completas en las cuales podemos instalar PHP, bases de datos, Apache, entre otras. La otra vertiente es **Docker** con la cual se generan pequeños contenedores dentro de una máquina virtual los cuales contienen la instalación de PHP o la base de datos, logrando que trabajen en conjunto.
 
-```
+Para comenzar a usar Homestead vamos a seguir los siguientes pasos y configuraciones:
 
-```
-<a class="f" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{site.baseurl}}{{ page.url }}" onclick="window.open(this.href, 'mywin',
-```
+* Descargaremos Vagrant y lo instalaremos <https://www.vagrantup.com/> así como el entorno de virtualización VirtualBox <https://www.virtualbox.org>
+* Utilizaremos la imagen de Laravel Homestead siguiendo los pasos que aquí se describen: <https://laravel.com/docs/5.7/homestead>. Las imágenes de Vagrant las llamaremos box o cajas, Homestead es una de ellas.
 
-```
-'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" ><i class="fa fa-facebook-official fa"></i><span> facebook</span></a>
-```
+### Instalando Homestead Vagrant Box
 
+Una vez que tengamos instalado VirtualBox / VMware y Vagrant deberas agregar la box `laravel/homestead` usando el siguiente comando en tu terminal. Esto tomara unos minutos en descargar dependiendo de tu conexión a internet
+
+```php
+vagrant box add laravel/homestead
 ```
 
-```
+Ejecutamos el comando `vagrant` en la terminal y si todo se instalo correctamente nos saldrá la ayuda del comando, también podemos ver la versión que tenemos instalada con el comando `vagrant -v`.
+
+### Instalando Homestead
+
+Ya que haya termino la descarga de la box puedes instalar Homestead clonando el repositorio. Considera clonar el repositorio en la carpeta Homestead dentro de tu directorio "home", así Homestead podra servir como host de todos tus proyectos php.
 
 ```
-<a class="t" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{site.baseurl}}{{ page.url }}" onclick="window.open(this.href, 'mywin',
+git clone https://github.com/laravel/homestead.git ~/Homestead
 ```
 
-```
-'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter fa"></i><span> twitter</span></a>
-```
+Una vez clonado el proyecto nos movemos a ese directorio.
 
 ```
-
+cd ~/Homestead
 ```
 
-```
-<a class="g" href="https://plus.google.com/share?url={{ site.url }}{{site.baseurl}}{{ page.url }}" onclick="window.open(this.href, 'mywin',
+Ejecutamos el comando que inicializara Homestead el cual crea un nuevo archivo de configuración Homestead.yaml 
+
+```php
+// Mac / Linux...
+bash init.sh
+
+// Windows...
+init.bat
 ```
 
-```
-'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" ><i class="fa fa-google-plus fa"></i><span> google</span></a>
+* Al editar el archivo “Homestead.yaml”, tenemos información de la ip que no es el localhost por ser máquina virtual. Aquí igualmente ligamos nuestra carpeta de proyecto a la carpeta de la máquina virtual; también podemos añadir bases de datos y diferentes proyectos dentro de la misma máquina o box.
+
+### Configurando carpetas compartidas
+
+Aquí se mapean las carpetas que deseas conpartir con tu entorno de Homestead. Estos se sincronizan entre tu máquina y el entorno Homestead y puedes configurar tantas carpetas creas necesarias:
+
+```php
+folders:
+    - map: ~/code
+      to: /home/vagrant/code
 ```
 
+Si tu creas pocos sitios, el mapeo generico resulta suficiente. sin embargo si el número de sitio continua creciendo, puedes comenzar a experimentar problemas de rendimiento. Este problema llega a suceder por la gran cantidad de archivos. Si estas experimentando este error, intenta mapear cada proyecto en su propia carpeta Vagrant:
+
+```php
+folders:
+    - map: ~/code/project1
+      to: /home/vagrant/code/project1
+
+    - map: ~/code/project2
+      to: /home/vagrant/code/project2
 ```
 
+### Configurando los Sitios
+
+Los sitios nos permiten mapear facilmente un dominio hacia una carpeta en tu entorno Homestead. De nuevo, puedes agregar tantos sitios a tu entorno como sea necesario para cada proyecto php:
+
+```php
+sites:
+    - map: homestead.test
+      to: /home/vagrant/code/Laravel/public
 ```
 
-```
-<a class="r" href="http://www.reddit.com/submit?url={{ site.url }}{{site.baseurl}}{{ page.url }}" onclick="window.open(this.href, 'mywin',
-```
+### El archivo Hosts
+
+Tu debes agregar los dominios de tus sitios del servidor en tu máquina. El archivo de hosts redireccionara las peticiones de tus sitios de Homestead dentro de tu máquina. En Mac y Linux el archivo se encuentra en `/etc/hosts`. En Windows esta ubicado en `C:\Windows\System32\drivers\etc\hosts`. Las lineas que agregas a este archivo deberán verse como la siguiente:
 
 ```
-'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" ><i class="fa fa-reddit fa"></i><span> reddit</span></a>
+192.168.10.10 homestead.test
 ```
 
-```
+* Cuando usas el comando “vagrant up” se creará una máquina virtual vagrant si no existe; si existe se reiniciará la máquina existente. Se ejecutará también el aprovisionamiento que es configurar o instalar cualquier cosa que se necesite.
 
-```
+### Ejecutando Vagrant Box
 
-```
-<a class="l" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{site.baseurl}}{{ page.url }}&title={{ page.title }}&summary={{ page.desc }}&source=webjeda" onclick="window.open(this.href, 'mywin',
-```
+Una vez que hayas editado  Homestead.yaml, ejecuta el comando `vagrant up` de tu directorio Homested. Vagrant prendera la máquina y automaticamente configurara tus carpetas compartidas y sitios.
 
-```
-'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" ><i class="fa fa-linkedin fa"></i><span> linkedin</span></a>
-```
-
-```
-
-```
-
-```
-<a class="e" href="mailto:?subject={{ page.title }}&amp;body=Check out this site {{ site.url }}{{site.baseurl}}{{ page.url }}"><i class="fa fa-envelope fa"></i><span> email</span></a>
-```
-
-```
-</div>
-```
+Hemos terminado de configurar Homestead  ahora si podremos comenzar a desarrollar nuestros proyectos si preocuparnos de las problemáticas mencionadas al inicio del post, espero que este post te ayude
