@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="/assets/css/aurora-theme-base.min.css">
     <link rel="stylesheet" href="/assets/css/urku.css">
     <link rel="stylesheet" href="/assets/css/app.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106541038-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106541038-2');
+    </script>
   </head>
   <body class="top-fixed">
     <header class="ae-container-fluid ae-container-fluid--full rk-header ">
@@ -25,7 +34,7 @@
         </svg>
       </label>
       <div class="ae-container-fluid rk-topbar">
-        <h1 class="rk-logo" ><a href="/"> by Ismael López</a></h1>
+        <h1 class="rk-logo" ><a href="/"> Runcoding</a></h1>
         <nav class="rk-navigation">
           <ul class="rk-menu">
   
@@ -62,7 +71,7 @@
     </header>
 
     <section class="ae-container-fluid ae-container-fluid--full">
-  <header class="rk-portfolio-cover" style="background-image: url('/assets/images/uploads/Community-Manager-1099x550.png');">
+  <<header class="rk-portfolio-cover" style="background-image: url('/assets/images/uploads/homestead.jpg');">
     <div class="item-inside__meta">
       <h1 class="ae-u-bolder rk-portfolio-title white">Homestead como entorno de desarrollo profesional.</h1>
       <p class="ae-theta rk-portfolio-category white">publicado el 23/09/2017</p>
@@ -79,7 +88,7 @@
   stroke-linejoin="round" stroke-width="2"><circle cx="16" cy="16" r="14" /><path d="M16 8 L16 16 20 20" /></svg>
    
    
-     <p class="ae-theta">2 <span class="ae-u-bolder">  mins.</span> de lectura</p>
+     <p class="ae-theta">4 <span class="ae-u-bolder">  mins.</span> de lectura</p>
    
  </div>
 </div>
@@ -88,94 +97,99 @@
     svg#i-clock {vertical-align: middle;}
 </style>
 
-        <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build
-the site to see your changes. You can rebuild the site in many different ways, but
-the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and
-auto-regenerates your site when a file is updated.</p>
+        <p>youtube lfAtoykp88E</p>
 
-<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the
-convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter.
-Take a look at the source for this post to get an idea about how it works.</p>
+<p>¿Qué es Homestead? Homestead nos provee de un entorno de desarrollo local mediante maquinas virtuales, por medio de Vagrant.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">show</span>
-  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
-  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
-    <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="c1"># show.html.erb</span>
-    <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json: </span><span class="vi">@widget</span> <span class="p">}</span>
-  <span class="k">end</span>
-<span class="k">end</span></code></pre></figure>
+<p>Cuando trabajas con múltiples proyectos, el hacerlo con tu máquina ya no es tan fácil ya que muchas veces necesitas diferentes versiones de PHP o tu equipo puede tener diferentes sistemas operativos, diferentes versiones de PHP o diferentes versiones de la base de datos lo cual puede ser bastante problemático. Para solucionar esto usamos la virtualización que nos permite crear entornos virtuales dentro de nuestro equipo que nos ayudan a tener un entorno de desarrollo ideal.</p>
 
-<script src="https://gist.github.com/ismaeldevmw/be5afff123ac9f36c9f3177861feb40a.js"></script>
+<p>Existen dos vertientes principales: <strong>Vagrant</strong> y <strong>Docker</strong>. <strong>Vagrant</strong> genera máquinas virtuales completas en las cuales podemos instalar PHP, bases de datos, Apache, entre otras. La otra vertiente es <strong>Docker</strong> con la cual se generan pequeños contenedores dentro de una máquina virtual los cuales contienen la instalación de PHP o la base de datos, logrando que trabajen en conjunto.</p>
 
-<h2 id="accessing-the-cms">Accessing the CMS</h2>
+<p>Para comenzar a usar Homestead vamos a seguir los siguientes pasos y configuraciones:</p>
 
-<p>Your site CMS is now fully configured and ready for login!</p>
+<ul>
+  <li>Descargaremos Vagrant y lo instalaremos <a href="https://www.vagrantup.com/">https://www.vagrantup.com/</a> así como el entorno de virtualización VirtualBox <a href="https://www.virtualbox.org">https://www.virtualbox.org</a></li>
+  <li>Utilizaremos la imagen de Laravel Homestead siguiendo los pasos que aquí se describen: <a href="https://laravel.com/docs/5.7/homestead">https://laravel.com/docs/5.7/homestead</a>. Las imágenes de Vagrant las llamaremos box o cajas, Homestead es una de ellas.</li>
+</ul>
 
-<p>If you set your registration preference to “Invite only,” you’ll need to invite yourself (and anyone else you choose) as a site user. To do this, select the Identity tab from your site dashboard, and then select the Invite users button. Invited users will receive an email invitation with a confirmation link. Clicking the link will take you to your site with a login prompt.</p>
+<h3 id="instalando-homestead-vagrant-box">Instalando Homestead Vagrant Box</h3>
 
-<p>If you left your site registration open, or for return visits after comfirming an email invitation, you can access your site’s CMS at yoursite.com/admin.</p>
+<p>Una vez que tengamos instalado VirtualBox / VMware y Vagrant deberas agregar la box <code class="highlighter-rouge">laravel/homestead</code> usando el siguiente comando en tu terminal. Esto tomara unos minutos en descargar dependiendo de tu conexión a internet</p>
 
-<p>Happy posting!</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="share-box"&gt;
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">vagrant</span> <span class="nx">box</span> <span class="nx">add</span> <span class="nx">laravel</span><span class="o">/</span><span class="nx">homestead</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;h5&gt;Comparte esto:&lt;/h5&gt;
+<p>Ejecutamos el comando <code class="highlighter-rouge">vagrant</code> en la terminal y si todo se instalo correctamente nos saldrá la ayuda del comando, también podemos ver la versión que tenemos instalada con el comando <code class="highlighter-rouge">vagrant -v</code>.</p>
+
+<h3 id="instalando-homestead">Instalando Homestead</h3>
+
+<p>Ya que haya termino la descarga de la box puedes instalar Homestead clonando el repositorio. Considera clonar el repositorio en la carpeta Homestead dentro de tu directorio “home”, así Homestead podra servir como host de todos tus proyectos php.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/laravel/homestead.git ~/Homestead
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<p>Una vez clonado el proyecto nos movemos a ese directorio.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/Homestead
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a class="f" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr" onclick="window.open(this.href, 'mywin',
+<p>Ejecutamos el comando que inicializara Homestead el cual crea un nuevo archivo de configuración Homestead.yaml</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Mac / Linux...</span>
+<span class="nx">bash</span> <span class="nx">init</span><span class="o">.</span><span class="nx">sh</span>
+
+<span class="c1">// Windows...</span>
+<span class="nx">init</span><span class="o">.</span><span class="nx">bat</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" &gt;&lt;i class="fa fa-facebook-official fa"&gt;&lt;/i&gt;&lt;span&gt; facebook&lt;/span&gt;&lt;/a&gt;
+<ul>
+  <li>Al editar el archivo “Homestead.yaml”, tenemos información de la ip que no es el localhost por ser máquina virtual. Aquí igualmente ligamos nuestra carpeta de proyecto a la carpeta de la máquina virtual; también podemos añadir bases de datos y diferentes proyectos dentro de la misma máquina o box.</li>
+</ul>
+
+<h3 id="configurando-carpetas-compartidas">Configurando carpetas compartidas</h3>
+
+<p>Aquí se mapean las carpetas que deseas conpartir con tu entorno de Homestead. Estos se sincronizan entre tu máquina y el entorno Homestead y puedes configurar tantas carpetas creas necesarias:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">folders</span><span class="o">:</span>
+    <span class="o">-</span> <span class="nx">map</span><span class="o">:</span> <span class="o">~/</span><span class="nx">code</span>
+      <span class="nx">to</span><span class="o">:</span> <span class="o">/</span><span class="nx">home</span><span class="o">/</span><span class="nx">vagrant</span><span class="o">/</span><span class="nx">code</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<p>Si tu creas pocos sitios, el mapeo generico resulta suficiente. sin embargo si el número de sitio continua creciendo, puedes comenzar a experimentar problemas de rendimiento. Este problema llega a suceder por la gran cantidad de archivos. Si estas experimentando este error, intenta mapear cada proyecto en su propia carpeta Vagrant:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">folders</span><span class="o">:</span>
+    <span class="o">-</span> <span class="nx">map</span><span class="o">:</span> <span class="o">~/</span><span class="nx">code</span><span class="o">/</span><span class="nx">project1</span>
+      <span class="nx">to</span><span class="o">:</span> <span class="o">/</span><span class="nx">home</span><span class="o">/</span><span class="nx">vagrant</span><span class="o">/</span><span class="nx">code</span><span class="o">/</span><span class="nx">project1</span>
+
+    <span class="o">-</span> <span class="nx">map</span><span class="o">:</span> <span class="o">~/</span><span class="nx">code</span><span class="o">/</span><span class="nx">project2</span>
+      <span class="nx">to</span><span class="o">:</span> <span class="o">/</span><span class="nx">home</span><span class="o">/</span><span class="nx">vagrant</span><span class="o">/</span><span class="nx">code</span><span class="o">/</span><span class="nx">project2</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a class="t" href="https://twitter.com/intent/tweet?text=Homestead como entorno de desarrollo profesional.&amp;url=http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr" onclick="window.open(this.href, 'mywin',
+<h3 id="configurando-los-sitios">Configurando los Sitios</h3>
+
+<p>Los sitios nos permiten mapear facilmente un dominio hacia una carpeta en tu entorno Homestead. De nuevo, puedes agregar tantos sitios a tu entorno como sea necesario para cada proyecto php:</p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">sites</span><span class="o">:</span>
+    <span class="o">-</span> <span class="nx">map</span><span class="o">:</span> <span class="nx">homestead</span><span class="o">.</span><span class="nx">test</span>
+      <span class="nx">to</span><span class="o">:</span> <span class="o">/</span><span class="nx">home</span><span class="o">/</span><span class="nx">vagrant</span><span class="o">/</span><span class="nx">code</span><span class="o">/</span><span class="nx">Laravel</span><span class="o">/</span><span class="k">public</span>
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"&gt;&lt;i class="fa fa-twitter fa"&gt;&lt;/i&gt;&lt;span&gt; twitter&lt;/span&gt;&lt;/a&gt;
+<h3 id="el-archivo-hosts">El archivo Hosts</h3>
+
+<p>Tu debes agregar los dominios de tus sitios del servidor en tu máquina. El archivo de hosts redireccionara las peticiones de tus sitios de Homestead dentro de tu máquina. En Mac y Linux el archivo se encuentra en <code class="highlighter-rouge">/etc/hosts</code>. En Windows esta ubicado en <code class="highlighter-rouge">C:\Windows\System32\drivers\etc\hosts</code>. Las lineas que agregas a este archivo deberán verse como la siguiente:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>192.168.10.10 homestead.test
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-</code></pre></div></div>
+<ul>
+  <li>Cuando usas el comando “vagrant up” se creará una máquina virtual vagrant si no existe; si existe se reiniciará la máquina existente. Se ejecutará también el aprovisionamiento que es configurar o instalar cualquier cosa que se necesite.</li>
+</ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a class="g" href="https://plus.google.com/share?url=http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr" onclick="window.open(this.href, 'mywin',
-</code></pre></div></div>
+<h3 id="ejecutando-vagrant-box">Ejecutando Vagrant Box</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" &gt;&lt;i class="fa fa-google-plus fa"&gt;&lt;/i&gt;&lt;span&gt; google&lt;/span&gt;&lt;/a&gt;
-</code></pre></div></div>
+<p>Una vez que hayas editado  Homestead.yaml, ejecuta el comando <code class="highlighter-rouge">vagrant up</code> de tu directorio Homested. Vagrant prendera la máquina y automaticamente configurara tus carpetas compartidas y sitios.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-</code></pre></div></div>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a class="r" href="http://www.reddit.com/submit?url=http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr" onclick="window.open(this.href, 'mywin',
-</code></pre></div></div>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" &gt;&lt;i class="fa fa-reddit fa"&gt;&lt;/i&gt;&lt;span&gt; reddit&lt;/span&gt;&lt;/a&gt;
-</code></pre></div></div>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-</code></pre></div></div>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a class="l" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr&amp;title=Homestead como entorno de desarrollo profesional.&amp;summary=&amp;source=webjeda" onclick="window.open(this.href, 'mywin',
-</code></pre></div></div>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" &gt;&lt;i class="fa fa-linkedin fa"&gt;&lt;/i&gt;&lt;span&gt; linkedin&lt;/span&gt;&lt;/a&gt;
-</code></pre></div></div>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-</code></pre></div></div>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a class="e" href="mailto:?subject=Homestead como entorno de desarrollo profesional.&amp;amp;body=Check out this site http://localhost:4000/2017/09/23/homestead-como-entorno-de-desarrollo-pr"&gt;&lt;i class="fa fa-envelope fa"&gt;&lt;/i&gt;&lt;span&gt; email&lt;/span&gt;&lt;/a&gt;
-</code></pre></div></div>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;/div&gt;
-</code></pre></div></div>
+<p>Hemos terminado de configurar Homestead  ahora si podremos comenzar a desarrollar nuestros proyectos si preocuparnos de las problemáticas mencionadas al inicio del post, espero que este post te ayude</p>
 
       </div>
     </div>
@@ -183,7 +197,7 @@ Take a look at the source for this post to get an idea about how it works.</p>
     <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
       <div class="ae-grid__item item-lg-12 au-xs-ta-center">
         <p class="ae-theta">por <span class="ae-u-bolder"><a href="/about">@ismaeldevmw</a></span></p>
-        <p class="ae-theta">categoría <span class=" item-tags"><small>PHP,Laravel</small></span></p>
+        <p class="ae-theta">categoría <span class=" item-tags"><small>Laravel</small></span></p>
       </div>
       <div class="ae-grid__item item-lg-12 au-xs-ta-center">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -280,6 +294,12 @@ fjs.parentNode.insertBefore(js, fjs);
 <section class="ae-container-fluid">
   <div class="group-buttons">
     
+    
+    <a href="/2017/11/12/el-jam-stack-javascript-api-s-y-markup" class="arrow-button arrow-button--center"> El JAM Stack: Javascript, API´s y Markup
+     <span class="arrow-cont">
+       <svg><use xlink:href="/assets/img/symbols.svg#arrow"/></svg>
+     </span>
+    </a>
     
   </div>
 </section>
