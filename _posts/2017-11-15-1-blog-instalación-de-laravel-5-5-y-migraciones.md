@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: '#1 Creando un BLOG | Instalación de Laravel 5.5 y migraciones.'
 tags: Laravel
 thumbnail: /assets/images/uploads/miniatura-laravel-1.png

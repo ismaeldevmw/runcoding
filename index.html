@@ -1,33 +1,14 @@
 ---
-layout: page
-title: Learn to code
+layout: blogs_page
+title: Blog | Runcoding
 ---
-<div class="ae-masonry ae-masonry-sm-1 ae-masonry-md-1 ae-masonry-xl-1">
 {% for post in paginator.posts %}
- <a href="{{ post.url }}" class="rk-item ae-masonry__item">
-   <img src="{{ post.thumbnail }}" />
-   <span class="item-meta">
-     <p>Ver artículo</p>
-   </span>
-   <div class="item-content">
-     <span class="item-title">
-       <strong>{{ post.title }}</strong>
-     </span>
-     <br>
-     <span class="item-date">
-      <small>publicado el {{ post.date | date: "%d/%m/%Y" }}</small></p>
-     </span>
-     <span class="item-description">
-      <small></small>
-     </span>
-     <span class="item-tags">
-      <strong><small>{{ post.tags }}</small></strong>
-     </span>
-   </div>
- </a>
+  <article class="post-container">
+    <a href="{{ post.url }}" >
+      <img src="{{ post.thumbnail }}" alt="{{ post.title }}">
+    </a>
+    <a href="{{ post.url }}" >{{ post.title }}</a>
+  </article>
 {% endfor %}
-</div>
 
-<div class="ae-grid__item item-sm-12" style="margin-top: 10px; background-color: #fff;">
 {% include pagination.html %}
-</div>

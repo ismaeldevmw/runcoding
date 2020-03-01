@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: 'El JAM Stack: Javascript, API´s y Markup'
 tags: JAM
 thumbnail: /assets/images/uploads/jekyll-netlify-degradado.png

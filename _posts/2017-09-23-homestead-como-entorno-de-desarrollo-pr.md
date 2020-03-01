@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: Homestead como entorno de desarrollo profesional.
 tags: Laravel
 thumbnail: /assets/images/uploads/homestead.jpg

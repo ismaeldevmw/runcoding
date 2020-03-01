@@ -1,4 +1,5 @@
 ---
+layout: blog
 title: Fundamentos de VueJS 2
 description: En este curso aprenderás las bases que necesitas para comenzar a utilizar VueJS en tus proyectos web.
 price: FREE

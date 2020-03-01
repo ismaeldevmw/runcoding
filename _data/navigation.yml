@@ -1,6 +1,4 @@
 - link: /
   name: Blog
-- link: /courses/
-  name: Courses
-- link: /videos/
-  name: Videos
+- link: /cursos/
+  name: Cursos

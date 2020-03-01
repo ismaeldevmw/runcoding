@@ -20,7 +20,7 @@ bundle install
 jekyll serve
 ```
 
-# Guía de código
+# Guía de código CSS
 ## Principios
 + Mantenerlo simple y reusar lo más posible.
 + Un código que luzca como si una sola persona lo haya escrito

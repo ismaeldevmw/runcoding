@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: Recursos para desarrolladores Julio 2018
 tags: 'desarrollo web, Javascript'
 thumbnail: /assets/images/uploads/miniatura-recursos-junio-2018.png

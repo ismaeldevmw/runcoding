@@ -1,4 +1,4 @@
-name: Runcoding - Learn to Code
+name: Runcoding
 url: https://runcoding.netlify.com/
 markdown: kramdown
 highlighter: rouge
@@ -6,8 +6,7 @@ highlighter: rouge
 collections:
   posts:
   cursos:
-  videos:
-  portafolios:
+  podcasts:
 
 plugins:
   - jekyll-paginate

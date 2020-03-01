@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 title: '#2 Creando un BLOG | SLUG y Migraciones'
 tags: Laravel
 thumbnail: /assets/images/uploads/miniatura-laravel-2.png

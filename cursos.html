@@ -1,27 +1,15 @@
 ---
-layout: page
-title: Courses
-permalink: /courses/
+layout: blogs_page
+title: Cursos | Runcoding
+permalink: /cursos/
 ---
-<div class="ae-masonry ae-masonry-sm-1 ae-masonry-md-2">
-{% for item in site.cursos %}
- <a href="{{ item.link }}" class="rk-item ae-masonry__item">
-   <img src="{{ item.thumbnail }}" />
-   <span class="item-meta">
-     <p>Ir al curso</p>
-   </span>
-   <div class="item-content">
-     <span class="item-title">
-       <strong>{{ item.title }}</strong>
-     </span>
-     <br>
-     <span class="item-details">
-      <small>{{ item.description}}</small></p>
-     </span>
-     <span class="item-tags">
-      <strong><small>{{ item.price }}</small></strong>
-     </span>
-   </div>
- </a>
+{% for curso in site.cursos %}
+  <article class="post-container">
+    <a href="{{ curso.link }}" >
+      <img src="{{ curso.thumbnail }}" alt="{{ curso.title }}">
+    </a>
+    <h2><a href="{{ curso.link }}" >{{ curso.title }}</a></h2>
+    <p>{{ curso.description }}</p>
+    <a href="{{ curso.link }}" class="blogs-button">{{ curso.price }}</a>
+  </article>
 {% endfor %}
-</div>
