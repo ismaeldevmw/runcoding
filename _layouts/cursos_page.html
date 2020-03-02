@@ -4,8 +4,8 @@ layout: default
 <main class="blogs-main">
 	<section class="blogs-news-container">
 		<div class="blogs-main-new grid-container">
-			<h3>Noticias</h3>
-			{% for post in site.posts limit:1 %}
+			<h3>Último curso</h3>
+			{% for post in site.cursos limit:1 %}
 			<div class="blogs-news-img-container">
 				<img src="{{ post.thumbnail }}" alt="{{ post.title }}">
 			</div>
@@ -19,7 +19,7 @@ layout: default
 	</section>
 	<section class="blogs-posts-container">
 		<div class="grid-container">
-			<h3>Ártículos</h3>
+			<h3>Cursos</h3>
 			{{ content }}
 		</div>
 	</section>
