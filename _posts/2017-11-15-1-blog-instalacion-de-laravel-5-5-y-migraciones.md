@@ -1,9 +1,10 @@
 ---
 layout: blog
+permalink: '/:title'
 title: '#1 Creando un BLOG | Instalación de Laravel 5.5 y migraciones.'
-tags: Laravel
+tags: laravel
 thumbnail: /assets/images/uploads/miniatura-laravel-1.png
-permalink: '/:year/:month/:day/:title'
+toc: true
 ---
 Bienvenido a este nuevo post en en que vamos a comenzar el proyecto de crear un blog en Laravel 5.5, Laravel utiliza Composer para manejar sus dependencias, así que antes de comenzar debes asegurarte de tenerlo instalado en tu máquina.
 

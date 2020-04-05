@@ -61,3 +61,6 @@ Propiedades del modelo de caja (display, width, height, margin, etc)
   @include font-size (13px);
 }
 ```
+
+## Links a Recursos Útiles
+[https://github.com/jwarby/jekyll-pygments-themes](https://github.com/jwarby/jekyll-pygments-themes)

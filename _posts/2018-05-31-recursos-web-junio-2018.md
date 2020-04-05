@@ -1,9 +1,10 @@
 ---
 layout: blog
+permalink: '/:title'
 title: Recursos para desarrolladores Julio 2018
-tags: 'desarrollo web, Javascript'
+tags:  javascript
 thumbnail: /assets/images/uploads/miniatura-recursos-junio-2018.png
-permalink: '/:year/:month/:day/:title'
+toc: true
 ---
 En esta serie de posts mensuales les compartiré los recursos que me parezcan interesantes y que de antemano ya he ido utilizando en proyectos en mi día a día como desarrollador o simplemente por ocio, así que no se diga mas y comenzemos.
 
