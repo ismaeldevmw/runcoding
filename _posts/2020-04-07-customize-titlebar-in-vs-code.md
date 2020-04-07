@@ -20,5 +20,13 @@ You can also open the Settings editor from the Command Palette (Ctrl+Shift+P) wi
 Go to "Appearance" and clic on Edit in settings.json". Add the next settings.
 
 ```javascript
-
+{
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#ff2c70",
+        "titleBar.inactiveBackground": "#ff2c70cc",
+        "titleBar.activeForeground": "#fff",
+        "titleBar.inactiveForeground": "#fff000cc"
+    } 
+}
 ```
+Thats all, you have customized your editor on VS Code.
