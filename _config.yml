@@ -6,7 +6,6 @@ highlighter: rouge
 collections:
   posts:
   cursos:
-  podcasts:
 
 plugins:
   - jekyll-paginate
