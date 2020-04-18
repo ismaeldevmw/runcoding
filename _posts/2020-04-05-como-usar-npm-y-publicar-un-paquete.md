@@ -1,9 +1,10 @@
 ---
 layout: blog
-permalink: '/:title'
+permalink: /:title
 title: ¿Cómo usar npm y publicar un paquete?
-tags: 
-    - javascript
+tags:
+  - javascript
+date: 2020-04-04T19:02:56.147Z
 thumbnail: /assets/images/uploads/npm-miniatura.jpg
 toc: true
 ---
