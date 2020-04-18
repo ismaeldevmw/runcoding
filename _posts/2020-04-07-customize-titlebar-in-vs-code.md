@@ -1,23 +1,23 @@
 ---
 layout: blog
-permalink: '/:title'
-title: Customize titleBar in VS Code
+permalink: /:title
+title: Personalizar la Barra de Título de Visual Studio Code
 tags:
   - vscode
 date: 2020-04-07T11:13:16.177Z
 thumbnail: /assets/images/uploads/titlebar-customized.png
-toc: 'false'
+toc: "false"
 ---
-To open your user and workspace settings, use the following VS Code menu command:
+Para abrir su configuración de usuario y espacio de trabajo, use el siguiente comando del menú VS Code:
 
-* On Windows/Linux - File > Preferences > Settings
-* On macOS - Code > Preferences > Settings
+* En Windows/Linux - File > Preferences > Settings
+* En macOS - Code > Preferences > Settings
 
-You can also open the Settings editor from the Command Palette (Ctrl+Shift+P) with Preferences: Open Settings or use the keyboard shortcut (Ctrl+,).
+También puede abrir el editor de Configuración desde la Paleta de comandos (Ctrl + Shift + P) con Preferencias: Abra Configuración o use el atajo de teclado (Ctrl +,).
 
 ![](/assets/images/uploads/settings.png)
 
-Go to "Appearance" and clic on Edit in settings.json". Add the next settings.
+Vaya a "Apariencia" y haga clic en Editar en settings.json ". Agregue la siguiente configuración.
 
 ```javascript
 {
@@ -29,4 +29,4 @@ Go to "Appearance" and clic on Edit in settings.json". Add the next settings.
     } 
 }
 ```
-Thats all, you have customized your editor on VS Code.
+Eso es todo, ha personalizado su editor en VS Code.
