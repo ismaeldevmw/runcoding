@@ -4,7 +4,7 @@ permalink: /:title
 title: Configurar VSCode para ser más productivo
 tags:
   - webdev
-date: 2020-04-18T01:02:43.258Z
+date: 2020-04-19T01:02:43.258Z
 thumbnail: /assets/images/uploads/vscode-plugins.png
 toc: "true"
 ---
