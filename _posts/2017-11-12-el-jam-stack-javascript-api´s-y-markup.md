@@ -1,12 +1,15 @@
 ---
 layout: blog
-permalink: '/:title'
-title: 'El JAM Stack: Javascript, API´s y Markup'
-tags: 
+permalink: /:title
+title: "El JAM Stack: Javascript, API´s y Markup"
+tags:
   - javascript
+date: 2020-04-18T21:53:58.381Z
 thumbnail: /assets/images/uploads/jekyll-netlify-degradado.png
 toc: true
 ---
+{% youtube "https://www.youtube.com/watch?v=DJoGU5xuN_c" %}
+
 Cuando hablamos de un stack normalmente pensamos en un backend, un fronted, bases de datos, etc. pero es solo un conjunto de tecnologías que usamos para llevar a cabo el desarrollo de un proyecto. El JAMStack no es en realidad un conjunto de tecnologías. Es una nueva forma de construir sitios web y apps que deliberen mejor performance, alta seguridad, escalamiento de bajo costo y una mejor experiencia de desarrollo.
 
 ![undefined](/assets/images/uploads/JAM.jpg)
