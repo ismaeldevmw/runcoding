@@ -11,6 +11,7 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-toc 
+  - jekyll-codepen
   
-paginate: 5
+paginate: 6
 paginate_path: "/blog/page:num/"
