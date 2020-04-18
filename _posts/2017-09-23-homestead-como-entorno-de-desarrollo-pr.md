@@ -1,12 +1,15 @@
 ---
 layout: blog
-permalink: '/:title'
+permalink: /:title
 title: Homestead como entorno de desarrollo profesional.
-tags: 
+tags:
   - laravel
+date: 2020-04-18T21:51:19.684Z
 thumbnail: /assets/images/uploads/homestead.jpg
 toc: true
 ---
+{% youtube "https://youtube.com/watch?v=lfAtoykp88E" %}
+
 ## Introducción
 ¿Qué es Homestead? Homestead nos provee de un entorno de desarrollo local mediante maquinas virtuales, por medio de Vagrant. 
 
