@@ -8,6 +8,8 @@ date: 2020-03-21T17:33:13.261Z
 thumbnail: /assets/images/uploads/comenzando-con-tailwind-css-youtube-thumbnail.png
 toc: true
 ---
+{% youtube "https://www.youtube.com/watch?v=x6gDb7HVo1Q" %}
+
 ## Instalación y configuración del proyecto
 Iniciamos un nuevo proyecto npm e instalamos las líbrerias que vamos a utilizar.
 ``` bat
