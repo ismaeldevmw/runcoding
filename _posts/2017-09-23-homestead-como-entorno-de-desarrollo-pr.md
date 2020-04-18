@@ -4,7 +4,7 @@ permalink: /:title
 title: Homestead como entorno de desarrollo profesional.
 tags:
   - laravel
-date: 2020-04-18T21:51:19.684Z
+date: 2019-09-23T21:51:19.684Z
 thumbnail: /assets/images/uploads/homestead.jpg
 toc: true
 ---
