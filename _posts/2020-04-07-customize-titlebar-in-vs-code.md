@@ -1,12 +1,12 @@
 ---
 layout: blog
-permalink: '/:title'
-title: Customize titleBar in VS Code
+permalink: /:title
+title: Personalizar la Barra de Titulo de Visual Studio Code
 tags:
   - vscode
 date: 2020-04-07T11:13:16.177Z
 thumbnail: /assets/images/uploads/titlebar-customized.png
-toc: 'false'
+toc: "false"
 ---
 To open your user and workspace settings, use the following VS Code menu command:
 
