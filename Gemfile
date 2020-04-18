@@ -7,4 +7,5 @@ group :jekyll_plugins do
 	gem "jekyll-gist"
 	gem "jekyll-toc" 
 	gem "jekyll-codepen"
+	gem "jekyll-youtube"
 end

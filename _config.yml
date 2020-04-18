@@ -12,6 +12,7 @@ plugins:
   - jekyll-gist
   - jekyll-toc 
   - jekyll-codepen
+  - jekyll-youtube
   
 paginate: 6
 paginate_path: "/blog/page:num/"
