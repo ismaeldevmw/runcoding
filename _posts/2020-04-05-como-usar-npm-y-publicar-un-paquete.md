@@ -8,6 +8,8 @@ date: 2020-04-04T19:02:56.147Z
 thumbnail: /assets/images/uploads/npm-miniatura.jpg
 toc: true
 ---
+{% youtube "https://www.youtube.com/watch?v=x6gDb7HVo1Q" %}
+
 npm (node package manager)  es el registro de software más grande del mundo. Los desarrolladores de código abierto de todos los continentes usan npm para compartir y tomar prestados paquetes, y muchas organizaciones también usan npm para administrar el desarrollo privado. 
 
 ## Iniciar un proyecto
