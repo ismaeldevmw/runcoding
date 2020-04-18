@@ -4,7 +4,7 @@ permalink: /:title
 title: "El JAM Stack: Javascript, API´s y Markup"
 tags:
   - javascript
-date: 2020-04-18T21:53:58.381Z
+date: 2017-11-12T22:53:58.381Z
 thumbnail: /assets/images/uploads/jekyll-netlify-degradado.png
 toc: true
 ---
