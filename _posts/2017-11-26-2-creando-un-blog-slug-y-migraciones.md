@@ -1,9 +1,10 @@
 ---
 layout: blog
-permalink: '/:title'
-title: '#2 Creando un BLOG | SLUG y Migraciones'
-tags: 
-    - laravel
+permalink: /:title
+title: "#2 Creando un BLOG | SLUG y Migraciones"
+tags:
+  - laravel
+date: 2017-11-26T23:01:50.561Z
 thumbnail: /assets/images/uploads/miniatura-laravel-2.png
 toc: false
 ---
