@@ -4,7 +4,7 @@ permalink: /:title
 title: Guía de inicio para usar CSS Tailwind
 tags:
   - css
-date: 2020-04-18T16:33:13.261Z
+date: 2020-03-21T17:33:13.261Z
 thumbnail: /assets/images/uploads/comenzando-con-tailwind-css-youtube-thumbnail.png
 toc: "true"
 ---
