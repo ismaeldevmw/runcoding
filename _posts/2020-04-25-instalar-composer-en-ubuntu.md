@@ -1,7 +1,7 @@
 ---
 layout: blog
 permalink: /:title
-title: "Instalar composer en ubuntu "
+title: "Instalar Composer en Ubuntu "
 tags:
   - php
 date: 2020-04-25T00:58:08.441Z
