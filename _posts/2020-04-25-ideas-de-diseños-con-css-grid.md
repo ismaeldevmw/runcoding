@@ -22,4 +22,4 @@ En esta publicación, te comparto tres tipos de layouts que puedes construir con
 
 {% codepen https://codepen.io/ismaeldevloop/pen/qBOrQbE default-tab=result %}
 
-Si te gustó el contenido y deseas obtener más información sobre el desarrollo web, te invito a suscribirse a mi canal de [YouTube] (https://youtube.com/c/runcoding) y seguirme en mis redes sociales. Nos vemos, hasta la próxima.
+Si te gustó el contenido y deseas obtener más información sobre el desarrollo web, te invito a suscribirse a mi canal de [YouTube](https://youtube.com/c/runcoding) y seguirme en mis redes sociales. Nos vemos, hasta la próxima.
