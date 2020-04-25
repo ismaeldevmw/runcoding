@@ -4,8 +4,8 @@ permalink: /:title
 title: "Instalar Composer en Ubuntu "
 tags:
   - php
-date: 2020-04-25T00:58:08.441Z
-thumbnail: /assets/images/uploads/logo-composer-transparent.png
+date: 2020-04-24T00:58:08.441Z
+thumbnail: /assets/images/uploads/instalar-composer.png
 toc: true
 ---
 1. Nos logueamos como root.
