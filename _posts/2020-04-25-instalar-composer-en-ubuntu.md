@@ -12,7 +12,7 @@ toc: true
 ```bash
 sudo su
 ```
-2. Nos movemos a “/usr/local/bin” para que composer sea ejecutabl desde cualquier lugar.
+2. Nos movemos a “/usr/local/bin” para que composer sea ejecutable desde cualquier lugar.
 ```bash
 cd /usr/local/bin
 ```
@@ -27,3 +27,5 @@ php -r "unlink('composer-setup.php');"
 ```bash
 mv composer.phar composer
 ```
+
+Listo ya puedes ejecutar el comando ***composer*** desde tu terminal.
