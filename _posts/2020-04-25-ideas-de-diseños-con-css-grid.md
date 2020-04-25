@@ -14,6 +14,9 @@ En esta publicación, te comparto tres tipos de layouts que puedes construir con
 
 {% codepen https://codepen.io/ismaeldevloop/pen/wvKJYZe default-tab=css,result %}
 
+{% codepen https://codepen.io/ismaeldevloop/pen/LYpWajN default-tab=result %}
+
+
 2. Contact
 
 {% codepen  https://codepen.io/ismaeldevloop/pen/XWmMyWG default-tab=result %}
