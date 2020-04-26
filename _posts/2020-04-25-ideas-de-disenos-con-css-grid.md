@@ -6,7 +6,7 @@ tags:
   - css
 date: 2020-04-25T06:00:06.899Z
 thumbnail: /assets/images/uploads/css-grid-layouts.png
-toc: true
+toc: false
 ---
 En esta publicación, te comparto tres tipos de layouts que puedes construir con ***CSS Grid*** y usar para tus proyectos personales. CSS Grid es súper potente para el diseño de layouts, espero que esto te inspire y te motive a aprender más sobre este mundo de creatividad con CSS.
 

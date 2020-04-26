@@ -6,7 +6,7 @@ tags:
   - css
 date: 2020-02-22T19:07:28.213Z
 thumbnail: /assets/images/uploads/carousel-css.png
-toc: "false"
+toc: false
 ---
 El usuario necesita navegar por un set de items y posiblemente seleccionar alguno de ellos para facilitar la interacción creamos este elemento llamado carousel/slideshow.
 

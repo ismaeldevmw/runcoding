@@ -6,7 +6,7 @@ tags:
   - webdev
 date: 2020-04-19T01:02:43.258Z
 thumbnail: /assets/images/uploads/vscode-plugins.png
-toc: "true"
+toc: true
 ---
 Una forma de optimizar tu productividad es medir todo lo que hagas, tomar el tiempo que te toma hacer cada una de las tareas y que mejor forma hacerlo todo desde un mismo sitio para evitar distraerte. Dicho esto te quiero compartir las extensiones de VSCode que utilizo para mejorar mi productividad y enfocarme en lo que de verdad importa.
 

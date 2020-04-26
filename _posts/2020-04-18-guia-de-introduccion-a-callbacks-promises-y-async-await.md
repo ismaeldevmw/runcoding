@@ -6,7 +6,7 @@ tags:
   - javascript
 date: 2020-03-14T17:37:47.853Z
 thumbnail: /assets/images/uploads/miniatura-post-async-await.png
-toc: "true"
+toc: true
 ---
 Esta es una guía de encontrarás conceptos básicos de asincronismo en JavaScript que nos permitirán tener aplicaciones mantenibles con código simple y fácil de leer como si de una receta de cocina se tratara, verás ejemplos prácticos. También puedes ver la [lista de reproducción](https://www.youtube.com/playlist?list=PL9U8K1aoRM6xt2_WkUxvqeogVeJwGJjn6) dedicada a estos temas en el canal de YouTube.
 

@@ -6,7 +6,7 @@ tags:
   - vscode
 date: 2020-04-07T11:13:16.177Z
 thumbnail: /assets/images/uploads/titlebar-customized.png
-toc: "false"
+toc: false
 ---
 Para abrir su configuración de usuario y espacio de trabajo, use el siguiente comando del menú VS Code:
 

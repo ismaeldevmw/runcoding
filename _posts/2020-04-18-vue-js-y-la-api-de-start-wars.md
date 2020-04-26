@@ -6,7 +6,7 @@ tags:
   - vue
 date: 2020-03-07T17:41:58.851Z
 thumbnail: /assets/images/uploads/start-wars-api.png
-toc: "true"
+toc: true
 ---
 La forma más fácil de trabajar con una API y tu sitio de JAMStack es directamente accediendo desde JavaScript. En este ejemplo, simplemente harás una petición HTTP al recurso y este se desplegara en pantalla. Vamos a ver como consumir la API de Start Wars con ayuda de Vue.js
 
