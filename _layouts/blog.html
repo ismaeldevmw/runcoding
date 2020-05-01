@@ -2,16 +2,29 @@
 layout: default
 ---
 <main>
-	<section class="grid-container blogpost-img-container">
-		<img src="{{ page.thumbnail }}" alt="{{ page.title }}">
+	<section class="grid-container blogpost-head-container">
+		<h1>{{ page.title }}</h1>
+		<p>publicado el {{ page.date | date: "%d/%m/%Y" }}</p>
+		<div>{% include read_time.html %}</div>
 	</section>
 	<section class="blogpost-main-container">
 		<div class="grid-container">
-			<h1>{{ page.title }}</h1>
-			<p>publicado el {{ page.date | date: "%d/%m/%Y" }}</p>
-			<article>
-				{{ content }}
-			</article>
+			{% if page.toc == true %}
+			<div class="blogpost__container_with_toc">
+				<div class="blogpost__content-table blogcard">
+					{{ content | toc_only }}
+				</div>
+				<article class="blogpost__main-content blogcard">
+					{{ content }}
+				</article>
+			</div>
+			{% else %}	
+			<div class="blogpost__container_no_toc">
+				<article class="blogpost__main-content blogcard">
+					{{ content }}
+				</article>
+			</div>			
+				{% endif %}
 		</div>
   	</section>
 

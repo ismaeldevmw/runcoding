@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<main class="blogs-main">
+	<section class="blogs-news-container">
+		<div class="blogs-main-new grid-container">
+			<h3>Noticias</h3>
+			{% for post in site.posts limit:1 %}
+			<div class="blogs-news-img-container eYyPGs">								
+				<img src="{{ post.thumbnail }}" alt="{{ post.title }}">				
+			</div>
+			<div class="blogs-news-info-container">				
+				<h2>{{ post.title }}</h2>
+				<p>{{ post.content | strip_html | truncatewords: 20 }}</p>
+				<a href="{{ post.url }}" class="blogs-button">Leer más</a>
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+	<section class="blogs-posts-container">
+		<div class="grid-container">
+			<h3>Últimos Ártículos</h3>
+			<div class="grid">
+				{{ content }}
+			</div>
+			<div class="blog-posts__view-all">
+				<a href="/blog" class="blogs-button">Ver Todos los Artículos</a>
+			</div>
+		</div>
+	</section>
+</main>

@@ -2,21 +2,6 @@
 layout: default
 ---
 <main class="blogs-main">
-	<section class="blogs-news-container">
-		<div class="blogs-main-new grid-container">
-			<h3>Último curso</h3>
-			{% for post in site.cursos limit:1 %}
-			<div class="blogs-news-img-container">
-				<img src="{{ post.thumbnail }}" alt="{{ post.title }}">
-			</div>
-			<div class="blogs-news-info-container">				
-				<h2>{{ post.title }}</h2>
-				<p>{{ post.excerpt }}</p>
-				<a href="{{ post.url }}" class="blogs-button">Leer más</a>
-			</div>
-			{% endfor %}
-		</div>
-	</section>
 	<section class="blogs-posts-container">
 		<div class="grid-container">
 			<h3>Cursos</h3>

@@ -1,6 +1,6 @@
 ---
 layout: blog
-permalink: /:title
+permalink: /blog/:title
 title: Ideas de diseños con CSS Grid
 tags:
   - css

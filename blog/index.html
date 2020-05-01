@@ -1,8 +1,8 @@
 ---
-layout: home_page
+layout: blogs_page
 title: Home
 ---
-{% for post in site.posts limit:6 %}
+{% for post in paginator.posts %}
   <article class="post-element">
     <a href="{{ post.url }}" >
       <img src="{{ post.thumbnail }}" alt="{{ post.title }}">
