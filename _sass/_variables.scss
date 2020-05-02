@@ -1,0 +1,57 @@
+// ---------------------------------------------
+// VARIABLES
+
+
+// ---------------------------------------------
+// VARIABLES: COLORS
+
+// Colors: Brand
+$primary-color: #453DB4;
+$primary-color-light: #4D43CF;
+$primary-color-dark: #38337B;
+$accent-color: #FAC400;
+$gray-light: #FAFAFA;
+$gray-shadow: #CCCCCC;
+$white: #FFFFFF;
+$black: #242526;
+
+// Colors: Typography
+$color-font: #666666;
+$color-link: #FAC400;
+
+// ---------------------------------------------
+// VARIABLES: FONTS
+
+// Fonts: Families
+$font-family-1: "Nunito Sans", sans-serif;
+
+// Fonts: Weights
+$font-regular: 400;
+$font-semi-bold: 600;
+$font-bold: 700;
+
+// Fonts: Line Height
+$line-height: 1.5;
+
+// Fonts: Sizes
+$font-size: 14px;
+$font-size-xs: px-to-percent(10);
+$font-size-sm: px-to-percent(12);
+$font-size-lg: px-to-percent(16);
+
+// Fonts: Headings: Sizes
+$h1: px-to-percent(24);
+$h2: px-to-percent(22);
+$h3: px-to-percent(20);
+$h4: px-to-percent(18);
+$h5: px-to-percent(16);
+$h6: px-to-percent(14);
+
+// ---------------------------------------------
+// VARIABLES: SPACING
+// Use for padding, margins, etc.
+
+$spacing: 10px;
+$spacing-2: ($spacing * 2);
+$spacing-3: ($spacing * 3);
+$spacing-half: ($spacing / 2);
