@@ -44,7 +44,7 @@ toc: true
 
 1. [GithubUser](https://github.com/PlatziMaster/challenge-node-01)
 2. [Web Scraping with Puppeteer](https://github.com/PlatziMaster/challenge-node-02)
-3. [Firebase Cloud Functions](https://github.com/PlatziMaster/challenge-node-03)
+3. [Firebase Cloud Functions](https://github.com/PlatziMaster/challenge-node-03)
 4. [Backend with Node](https://github.com/PlatziMaster/challenge-node-04)
 5. [Backend con Node + MongoDB](https://github.com/PlatziMaster/challenge-node-05)
 6. [Quotes API](https://github.com/PlatziMaster/challenge-node-06)
@@ -63,7 +63,6 @@ toc: true
 7. [Lambda Functions](https://github.com/PlatziMaster/challenge-python-07)
 8. [Time](https://github.com/PlatziMaster/challenge-python-08)
 9. [Doubling 0s](https://github.com/PlatziMaster/challenge-python-09)
-10. []()
 
 ## Algorithms and Data Structures
 
@@ -88,4 +87,3 @@ toc: true
 + [CSS Material Design transitions](https://github.com/PlatziMaster/CSS-Material-Design-transitions)
 + [Web Components (Rick & Morty)](https://github.com/PlatziMaster/webComponents-RickAndMorty)
 + [React: How to create a Blog in React?](https://github.com/PlatziMaster/workshop-react-01)
-
