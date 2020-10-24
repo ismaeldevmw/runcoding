@@ -31,6 +31,7 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 1.8)
+    jekyll-codepen (0.1.2)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
     jekyll-paginate (1.1.0)
@@ -41,6 +42,8 @@ GEM
       nokogiri (~> 1.9)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    jekyll-youtube (1.0.0)
+      jekyll
     kramdown (2.1.0)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
@@ -78,6 +81,8 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (>= 3.6.3)
+  jekyll-codepen
   jekyll-gist
   jekyll-paginate
   jekyll-toc
+  jekyll-youtube
