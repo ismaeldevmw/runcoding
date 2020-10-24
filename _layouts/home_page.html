@@ -4,7 +4,6 @@ layout: default
 <main class="blogs-main">
 	<section class="blogs-news-container">
 		<div class="blogs-main-new grid-container">
-			<h3>Noticias</h3>
 			{% for post in site.posts limit:1 %}
 			<div class="blogs-news-img-container eYyPGs">								
 				<img src="{{ post.thumbnail }}" alt="{{ post.title }}">				
